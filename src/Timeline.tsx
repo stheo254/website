@@ -1,3 +1,4 @@
+import random from './assets/react.svg';
 type TimelineItem = {
   id: number;
   content: string;
@@ -29,7 +30,7 @@ const Timeline: React.FC = () => {
           <div
             className={`absolute left-1/2 transform -translate-x-1/2 w-32 h-32 flex items-center justify-center rounded-full ${item.color}`}
           >
-            <span className="text-white italic">{item.content}</span>
+            <img src={random}></img>
           </div>
 
           {/* Right Description */}

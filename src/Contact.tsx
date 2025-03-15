@@ -18,7 +18,7 @@ const socialLinks: SocialLink[] = [
 function Contact() {
   return (
     <>
-      <div className="flex items-center justify-between p-10">
+      <div className="flex flex-wrap items-center justify-between p-10">
         <div className="grid justify-items-start">
           <h1 className="text-2xl font-light text-gray-800 mt-10 pl-10">
             You can contact me with my Email

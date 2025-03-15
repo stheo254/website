@@ -66,7 +66,12 @@ function App() {
           <Header scrollTo={scrollToSection} />
           <Titlecard />
         </section>
-        <section id="about" ref={sections[1]} style={sectionStyle('white', '100vh', '-100px', 8)}>
+        <section
+          id="about"
+          className="mb-10"
+          ref={sections[1]}
+          style={sectionStyle('white', 'auto', '-100px', 8)}
+        >
           <About />
         </section>
         <section

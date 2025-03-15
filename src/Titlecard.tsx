@@ -2,7 +2,7 @@ import myPic from './assets/Untitled.jpg';
 function Titlecard() {
   return (
     <>
-      <main className="flex items-center justify-between p-8">
+      <main className="flex flex-wrap items-center justify-between p-8">
         <div className="grid justify-items-start">
           <h1 className="text-5xl font-light text-gray-800 mb-4">Stefanus Theo Chandra</h1>
           <p className="text-gray-600 mb-8">a curious student</p>
