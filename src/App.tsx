@@ -3,6 +3,9 @@ import './App.css';
 import Header from './Header';
 import Titlecard from './Titlecard';
 import About from './About';
+import Contact from './Contact';
+import PastWork from './PastWork';
+import Timeline from './Timeline';
 
 function App() {
   /*
@@ -71,7 +74,7 @@ function App() {
           ref={sections[2]}
           style={{
             backgroundColor: 'lightgray',
-            height: '200vh',
+            height: '250vh',
             borderTopRightRadius: '20%',
             borderTopLeftRadius: '20%',
             borderBottomLeftRadius: '20%',
@@ -79,16 +82,18 @@ function App() {
           }}
         >
           past work
+          <PastWork />
         </section>
         <section
           id="journey"
           ref={sections[3]}
           style={{
             backgroundColor: 'white',
-            height: '200vh',
+            height: '100vh',
           }}
         >
-          journey
+          <h2>journey</h2>
+          <Timeline />
         </section>
         <section
           id="contact"
@@ -100,7 +105,7 @@ function App() {
             borderTopLeftRadius: '20%',
           }}
         >
-          contact
+          <Contact />
         </section>
       </div>
     </>
