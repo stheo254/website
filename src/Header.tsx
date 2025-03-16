@@ -20,8 +20,9 @@ function Header(props: ScrollButtonsProps) {
   };
   return (
     // Header.jsx
-    <header className="flex justify-between items-center p-10 top-10">
-      <div className="items-end pl-30">
+    <header className="flex flex-wrap justify-between items-center p-6 top-0 relative">
+      {/* Left Navigation */}
+      <div className="flex items-center space-x-4 sm:w-auto w-full justify-start sm:justify-start ml-20">
         <nav className="flex items-end space-x-4">
           <button
             className="font-bold text-black hover:underline"
@@ -45,13 +46,17 @@ function Header(props: ScrollButtonsProps) {
           </button>
         </nav>
       </div>
-      <div className="absolute left-1/2 transform -translate-x-1/2">
+
+      {/* Center Logo */}
+      <div className="flex justify-center sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:static w-full sm:w-auto mt-4 sm:mt-0">
         <img src={logo} alt="Logo" className="w-16 h-16 object-contain" />
       </div>
-      <div className="flex items-center gap-4">
+
+      {/* Right Section (CV and Email) */}
+      <div className="flex items-center gap-4 sm:w-auto w-full justify-end mt-4 sm:mt-0">
         <a
           href="https://drive.google.com/uc?export=download&id=1RnjE-ameqAYzQKp47vYyU83lm0zqS4kh"
-          target="_blank" // Opens in a new tab if the browser does not auto-download
+          target="_blank"
           rel="noopener noreferrer"
           download="your-file.pdf"
         >
@@ -59,10 +64,9 @@ function Header(props: ScrollButtonsProps) {
             CV
           </button>
         </a>
-        <div className="text-black border rounded-full p-2 flex item-center justify-center">
-          <img src={email} className="w-7"></img>
+        <div className="text-black border rounded-full p-2 flex items-center justify-center">
+          <img src={email} className="w-7" alt="Email Icon" />
           <button onClick={copyToClipboard} className="pt-1 pl-1">
-            {' '}
             {copied ? 'Copied!' : 'stefanustheo21@gmail.com'}
           </button>
         </div>
