@@ -1,7 +1,9 @@
 function About() {
   return (
     <>
-      <h1 className="pt-30 text-left p-10 text-4xl">About me</h1>
+      <h1 className="mt-30 mb-10 text-left p-5 text-4xl border-2 rounded-full mx-auto w-65 flex justify-center">
+        About me
+      </h1>
       <div className="flex justify-center items-center w-full">
         <div className="w-4/5 bg-gray-700 rounded-3xl p-5">
           <p className="text-xl text-white">
