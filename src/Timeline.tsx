@@ -43,10 +43,10 @@ const Timeline: React.FC = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center">
       {/* Vertical Line */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-black h-6/10 mt-25 "></div>
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-black h-8/10 mt-25 "></div>
 
       {timelineData.map((item, index) => (
-        <div key={item.id} className="relative w-full flex items-center my-20 ">
+        <div key={item.id} className="relative w-full flex items-center my-25 ">
           {/* Left Description */}
           {index % 2 === 0 && (
             <>

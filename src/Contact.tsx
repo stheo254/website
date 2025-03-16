@@ -10,10 +10,20 @@ type SocialLink = {
 };
 
 const socialLinks: SocialLink[] = [
-  { id: 1, name: 'Twitter', url: 'https://twitter.com/', icon: <FaTwitter /> },
-  { id: 2, name: 'LinkedIn', url: 'https://linkedin.com/', icon: <FaLinkedin /> },
-  { id: 3, name: 'GitHub', url: 'https://github.com/', icon: <FaGithub /> },
-  { id: 4, name: 'Instagram', url: 'https://instagram.com/', icon: <FaInstagram /> },
+  { id: 1, name: 'Twitter', url: 'https://x.com/theo_stefanus', icon: <FaTwitter /> },
+  {
+    id: 2,
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/stefanus-theo-chandra-909375200/',
+    icon: <FaLinkedin />,
+  },
+  { id: 3, name: 'GitHub', url: 'https://github.com/stheo254', icon: <FaGithub /> },
+  {
+    id: 4,
+    name: 'Instagram',
+    url: 'https://www.instagram.com/stefanus_theo/',
+    icon: <FaInstagram />,
+  },
 ];
 function Contact() {
   return (
@@ -30,19 +40,22 @@ function Contact() {
           <img className="w-80 rounded-3xl " src={myPic} alt="desc"></img>
         </div>
       </div>
-      <div className="flex gap-6 p-4 justify-center items-center relative w-full">
-        {socialLinks.map((link: SocialLink) => (
-          <a
-            key={link.id}
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-2xl hover:text-blue-500 transition-colors"
-            aria-label={link.name}
-          >
-            {link.icon}
-          </a>
-        ))}
+      <div className="flex flex-col gap-6 p-4 justify-center items-center relative w-full">
+        <div>You can also find me here:</div>
+        <div className="flex gap-6">
+          {socialLinks.map((link: SocialLink) => (
+            <a
+              key={link.id}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl hover:text-blue-500 transition-colors"
+              aria-label={link.name}
+            >
+              {link.icon}
+            </a>
+          ))}
+        </div>
       </div>
     </>
   );

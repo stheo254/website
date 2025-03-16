@@ -14,7 +14,7 @@ function Header(props: ScrollButtonsProps) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="px-4 py-2 rounded-full bg-gray-500 border shadow-sm hover:shadow-md transition-transform transform hover:scale-110">
+          <button className="px-4 py-2 rounded-full bg-gray-500 border-2 shadow-sm hover:shadow-md transition-transform transform hover:scale-110">
             CV
           </button>
         </a>

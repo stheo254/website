@@ -114,18 +114,21 @@ function App() {
           ref={sections[sections.length - 2]}
           style={{
             backgroundColor: 'white',
-            height: '100vh',
+            height: '150vh',
+            paddingTop: '2rem',
           }}
         >
-          <h2 className="text-4xl pb-10">My Journey</h2>
-          <Timeline />
+          <h2 className="text-4xl py-5 border-2 rounded-full w-70 mx-auto mb-20">My Journey</h2>
+          <FadeIn>
+            <Timeline />
+          </FadeIn>
         </section>
         <section
           id="contact"
           ref={sections[sections.length - 1]}
           style={{
             backgroundColor: 'lightgray',
-            height: '50vh',
+            height: '60vh',
             borderTopRightRadius: '20%',
             borderTopLeftRadius: '20%',
           }}
