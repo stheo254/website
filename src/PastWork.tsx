@@ -39,7 +39,6 @@ function PastWork(props: PastWorkProps) {
         {features.map((feature) => (
           <FadeIn>
             <div
-              onWheel={props.scrollTo}
               ref={feature.id == 0 ? null : props.sections[feature.id + 2]}
               key={feature.id}
               className="text-center max-w-3xl pt-10 bg-gray-400/80 rounded-2xl"

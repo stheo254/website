@@ -67,7 +67,6 @@ function App() {
       <div id="title" style={{ overflow: 'hidden' }}>
         <section
           className="bg-[url('./assets/80503.jpg')] bg-cover bg-center rounded-b-[10%]"
-          onWheel={handleScroll}
           ref={sections[0]}
           style={sectionStyle('lightgray', '100vh', '-10px', 10)}
         >
@@ -82,7 +81,6 @@ function App() {
         </section>
         <section
           id="about"
-          onWheel={handleScroll}
           className="mb-10"
           ref={sections[1]}
           style={sectionStyle('white', 'auto', '-100px', 8)}
@@ -119,7 +117,6 @@ function App() {
         <section
           id="journey"
           ref={sections[sections.length - 2]}
-          onWheel={handleScroll}
           style={{
             backgroundColor: 'white',
             height: '100vh',
