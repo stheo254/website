@@ -6,6 +6,9 @@ import About from './About';
 import Contact from './Contact';
 import PastWork from './PastWork';
 import Timeline from './Timeline';
+import { motion } from 'framer-motion';
+import FadeIn from './FadeIn';
+import { section } from 'framer-motion/client';
 
 function App() {
   /*
@@ -15,6 +18,8 @@ function App() {
   */
 
   const sections = [
+    useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
@@ -47,8 +52,6 @@ function App() {
     z: number,
   ): React.CSSProperties => ({
     height: height,
-    borderBottomLeftRadius: '10%',
-    borderBottomRightRadius: '10%',
     marginTop: margintop,
     position: 'relative',
     zIndex: z,
@@ -62,47 +65,72 @@ function App() {
   return (
     <>
       <div id="title" style={{ overflow: 'hidden' }}>
-        <section ref={sections[0]} style={sectionStyle('lightgray', '100vh', '-10px', 10)}>
-          <Header scrollTo={scrollToSection} />
-          <Titlecard />
+        <section
+          className="bg-[url('./assets/80503.jpg')] bg-cover bg-center rounded-b-[10%]"
+          onWheel={handleScroll}
+          ref={sections[0]}
+          style={sectionStyle('lightgray', '100vh', '-10px', 10)}
+        >
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: 'easeOut' }}
+          >
+            <Header scrollTo={scrollToSection} />
+            <Titlecard scrollTo={scrollToSection} sections={sections} />
+          </motion.div>
         </section>
         <section
           id="about"
+          onWheel={handleScroll}
           className="mb-10"
           ref={sections[1]}
           style={sectionStyle('white', 'auto', '-100px', 8)}
         >
-          <About />
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: 'easeOut' }}
+          >
+            <About />
+          </motion.div>
         </section>
         <section
           id="past"
-          ref={sections[2]}
+          className="bg-[url('./assets/bg6.jpg')] bg-center bg-cover"
           style={{
             backgroundColor: 'lightgray',
-            height: '250vh',
-            borderTopRightRadius: '20%',
-            borderTopLeftRadius: '20%',
-            borderBottomLeftRadius: '20%',
-            borderBottomRightRadius: '20%',
+            height: '300vh',
+            borderTopRightRadius: '10%',
+            borderTopLeftRadius: '10%',
+            borderBottomLeftRadius: '10%',
+            borderBottomRightRadius: '10%',
           }}
         >
-          past work
-          <PastWork />
+          {' '}
+          <h1
+            ref={sections[2]}
+            className="text-4xl pt-5 pb-10 bg-gray-400/80 rounded-xl w-96 mx-auto mb-20"
+          >
+            Past Work
+          </h1>
+          <PastWork scrollTo={handleScroll} sections={sections} />
         </section>
         <section
           id="journey"
-          ref={sections[3]}
+          ref={sections[sections.length - 2]}
+          onWheel={handleScroll}
           style={{
             backgroundColor: 'white',
             height: '100vh',
           }}
         >
-          <h2>journey</h2>
+          <h2 className="text-4xl pb-10">My Journey</h2>
           <Timeline />
         </section>
         <section
           id="contact"
-          ref={sections[4]}
+          ref={sections[sections.length - 1]}
           style={{
             backgroundColor: 'lightgray',
             height: '50vh',

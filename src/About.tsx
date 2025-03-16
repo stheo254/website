@@ -3,21 +3,33 @@ function About() {
     <>
       <h1 className="pt-30 text-left p-10 text-4xl">About me</h1>
       <div className="flex justify-center items-center w-full">
-        <div className="w-4/5 bg-gray-700 rounded-3xl p-10">
+        <div className="w-4/5 bg-gray-700 rounded-3xl p-5">
           <p className="text-xl text-white">
             {' '}
-            Hi, I'm Theo—a curious Computer Engineering student looking to improve my skills in most
-            aspects of computer programming. I am fascinated by how it shapes the world around us.
+            Hi, I'm Theo—a curious and driven Computer Engineering student eager to deepen my
+            understanding of the technologies shaping our world. I’m passionate about improving my
+            programming skills and exploring how systems work at a fundamental level.
           </p>
-          <p className="text-xl text-white p-10">
-            I am particularly interested in areas like computer architecture and cybersecurity. I
-            love tackling complex problems, developing innovative solutions, and learning about
-            emerging technologies that drive computing.
+          <p className="text-xl text-white p-5">
+            I’m particularly interested in computer architecture and cybersecurity. I enjoy learning
+            how hardware and software interact and tackling the challenges of protecting digital
+            systems. Staying updated on emerging technologies in these areas excites me, as they
+            play a vital role in the future of computing.
           </p>{' '}
-          <p className="text-xl text-white p-10">
-            Outside of academics, I enjoy playing computer games, badminton, and refining my Linux
-            configurations. I like team-oriented games where, in order to win, it's not just
-            individual skill that matters but how well people work together.
+          <p className="text-xl text-white p-5k">
+            I love solving complex problems and finding innovative solutions. My hands-on approach
+            to learning involves engaging in personal projects, collaborating with others, and
+            exploring new ideas to expand my skills.
+          </p>
+          <p className="text-xl text-white p-5">
+            Outside academics, I enjoy computer games—especially team-oriented ones where
+            collaboration matters as much as individual skill. I also play badminton, which helps me
+            stay active and sharp. Additionally, I like refining my Linux configurations, combining
+            creativity with technical skills to customize efficient and personalized systems.
+          </p>
+          <p className="text-xl text-white ">
+            As I continue my journey in computer engineering, I’m excited to explore new
+            possibilities and contribute to the evolving world of technology.
           </p>
         </div>
       </div>

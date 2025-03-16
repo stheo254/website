@@ -1,6 +1,6 @@
 import { JSX } from 'react';
 import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
-import myPic from './assets/Untitled.jpg';
+import myPic from './assets/Email-marketing-iStock-1094872032.webp';
 
 type SocialLink = {
   id: number;
@@ -26,8 +26,8 @@ function Contact() {
           <h4 className="text-2xl font-light text-gray-800 pl-10">stefanustheo21@gmail.com</h4>
         </div>
 
-        <div className="bg-gray-800 rounded-lg flex items-center justify-center mr-50">
-          <img src={myPic} alt="desc"></img>
+        <div className="bg-gray-800 flex items-center justify-center mr-50 rounded-4xl">
+          <img className="w-80 rounded-3xl " src={myPic} alt="desc"></img>
         </div>
       </div>
       <div className="flex gap-6 p-4 justify-center items-center relative w-full">
