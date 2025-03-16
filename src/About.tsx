@@ -1,4 +1,3 @@
-import { test } from './assets/Bulletpoint_Bullet_Listicon_Shape_Bulletfont_Glyph_Typography_Bullet_Point_Customshape_Wingding_Custom_Direction_Right_Circle-512.webp';
 import FadeIn from './FadeIn';
 function About() {
   return (

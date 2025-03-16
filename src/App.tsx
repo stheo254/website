@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import './App.css';
 import Header from './Header';
 import Titlecard from './Titlecard';
@@ -6,9 +6,7 @@ import About from './About';
 import Contact from './Contact';
 import PastWork from './PastWork';
 import Timeline from './Timeline';
-import { motion } from 'framer-motion';
 import FadeIn from './FadeIn';
-import { section } from 'framer-motion/client';
 
 function App() {
   const sections = [

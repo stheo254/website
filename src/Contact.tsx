@@ -1,6 +1,5 @@
 import { JSX } from 'react';
 import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
-import myPic from './assets/Email-marketing-iStock-1094872032.webp';
 
 type SocialLink = {
   id: number;

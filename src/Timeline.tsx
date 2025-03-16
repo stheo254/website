@@ -1,4 +1,3 @@
-import random from './assets/react.svg';
 import stk from './assets/tu-kaiserslautern-100~_v-img__16__9__l_-1dc0e8f74459dd04c91a0d45af4972b9069f1135.jpg';
 import tu from './assets/images.jpg';
 import binus from './assets/1.jpg';

@@ -14,14 +14,16 @@ function Titlecard(props: PastWorkProps) {
           <img
             src={myPic}
             alt="desc"
-            className="w-[100%] max-w-5xl object-contain object-bottom mb-32"
+            className="w-[100%] max-w-5xl object-contain object-bottom mb-28"
           />
         </div>
 
         {/* Content Section */}
         <div className="grid justify-items-start p-10 bg-white/10 backdrop-blur-md rounded-lg max-w-3xl z-10 -mt-40">
-          <h1 className="text-8xl font-light text-black mb-4">Stefanus Theo Chandra</h1>
-          <p className="text-black mb-8">a curious student</p>
+          <h1 className="text-8xl text-black mb-4 font-bold font-montserrat">
+            Stefanus Theo Chandra
+          </h1>
+          <p className="text-black mb-8 ">a curious student</p>
           <button
             className="px-6 py-2 rounded-full bg-gray-600 text-white italic transition-transform transform hover:scale-110"
             onClick={() => props.scrollTo(6)}
