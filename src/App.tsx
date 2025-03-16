@@ -11,12 +11,6 @@ import FadeIn from './FadeIn';
 import { section } from 'framer-motion/client';
 
 function App() {
-  /*
-  useEffect(() => {
-    document.documentElement.style.scrollBehavior = 'smooth';
-  }, []);
-  */
-
   const sections = [
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
@@ -95,7 +89,7 @@ function App() {
         </section>
         <section
           id="past"
-          className="bg-[url('./assets/bg6.jpg')] bg-center bg-cover"
+          className="bg-[url('./assets/bg-6.jpg')] bg-center bg-cover"
           style={{
             backgroundColor: 'lightgray',
             height: '300vh',
@@ -103,12 +97,13 @@ function App() {
             borderTopLeftRadius: '10%',
             borderBottomLeftRadius: '10%',
             borderBottomRightRadius: '10%',
+            paddingTop: '2rem',
           }}
         >
           {' '}
           <h1
             ref={sections[2]}
-            className="text-4xl pt-5 pb-10 bg-gray-400/80 rounded-xl w-96 mx-auto mb-20"
+            className="text-4xl pt-5 pb-5 border-2 border-gray-400 text-gray-400 rounded-full w-70 mx-auto mb-20"
           >
             Past Work
           </h1>

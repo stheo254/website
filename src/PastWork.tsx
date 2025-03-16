@@ -35,19 +35,21 @@ function PastWork(props: PastWorkProps) {
   ];
   return (
     <>
-      <div className="flex flex-col justify-evenly h-screen items-center gap-50">
+      <div className="flex flex-col justify-evenly h-screen items-center gap-15">
         {features.map((feature) => (
           <FadeIn>
             <div
               ref={feature.id == 0 ? null : props.sections[feature.id + 2]}
               key={feature.id}
-              className="text-center max-w-3xl pt-10 bg-gray-400/80 rounded-2xl"
+              className="text-center max-w-3xl pt-10 border-2 border-gray-400 rounded-2xl"
             >
               <div className="relative mb-8">
+                <h2 className="relative text-4xl text-gray-400 pb-10 font-bold">{feature.name}</h2>
                 <img src={feature.image} className="mx-auto w-80 drop-shadow-lg rounded-2xl" />
-                <h2 className="relative">{feature.name}</h2>
               </div>
-              <p className="text-lg text-black mb-6">{feature.description}</p>
+              <p className="text-lg text-black mb-6 pb-5 text-gray-400 mx-5">
+                {feature.description}
+              </p>
             </div>
           </FadeIn>
         ))}
