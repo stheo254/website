@@ -60,18 +60,14 @@ function App() {
     <>
       <div id="title" style={{ overflow: 'hidden' }}>
         <section
-          className="bg-[url('./assets/80503.jpg')] bg-cover bg-center rounded-b-[10%]"
+          className="bg-[#F8F8F8] bg-cover bg-center "
           ref={sections[0]}
           style={sectionStyle('lightgray', '100vh', '-10px', 10)}
         >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, ease: 'easeOut' }}
-          >
+          <FadeIn>
             <Header scrollTo={scrollToSection} />
             <Titlecard scrollTo={scrollToSection} sections={sections} />
-          </motion.div>
+          </FadeIn>
         </section>
         <section
           id="about"
@@ -79,19 +75,12 @@ function App() {
           ref={sections[1]}
           style={sectionStyle('white', 'auto', '-100px', 8)}
         >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, ease: 'easeOut' }}
-          >
-            <About />
-          </motion.div>
+          <About />
         </section>
         <section
           id="past"
-          className="bg-[url('./assets/bg-6.jpg')] bg-center bg-cover"
+          className="bg-[#4A4A4A] bg-center bg-cover"
           style={{
-            backgroundColor: 'lightgray',
             height: '300vh',
             borderTopRightRadius: '10%',
             borderTopLeftRadius: '10%',
@@ -103,7 +92,7 @@ function App() {
           {' '}
           <h1
             ref={sections[2]}
-            className="text-4xl pt-5 pb-5 border-2 border-gray-400 text-gray-400 rounded-full w-70 mx-auto mb-20"
+            className="text-sm p-1  border-1 border-gray-400 text-gray-400 rounded-full w-25 mx-auto mb-20"
           >
             Past Work
           </h1>
@@ -118,7 +107,7 @@ function App() {
             paddingTop: '2rem',
           }}
         >
-          <h2 className="text-4xl py-5 border-2 rounded-full w-70 mx-auto mb-20">My Journey</h2>
+          <h2 className="text-md border-2 rounded-full w-30 mx-auto mb-20">My Journey</h2>
           <FadeIn>
             <Timeline />
           </FadeIn>
@@ -128,7 +117,7 @@ function App() {
           ref={sections[sections.length - 1]}
           style={{
             backgroundColor: 'lightgray',
-            height: '60vh',
+            height: '30vh',
             borderTopRightRadius: '20%',
             borderTopLeftRadius: '20%',
           }}

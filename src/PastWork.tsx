@@ -1,6 +1,7 @@
 import serverjpg from './assets/server.jpg';
 import board from './assets/swappy-20250315_001649.png';
 import db from './assets/kisspng-computer-icons-scalable-vector-graphics-database-p-folder-networking-icons-1-6-free-vector-icons-5c6c5e4f61a510.1562063015506059034.png';
+import med from './assets/il_fullxfull.4832901302_jj39.webp';
 import FadeIn from './FadeIn';
 import { useRef } from 'react';
 
@@ -32,6 +33,13 @@ function PastWork(props: PastWorkProps) {
         'Handling databases in Python involves connecting to a database, executing queries, and managing data efficiently. A database management project in Python shows my ability to store, retrieve, and manipulate data effectively—essential for back-end development and data engineering roles.',
       image: db,
     },
+    {
+      id: 3,
+      name: 'Medic in a school sporting event',
+      description:
+        'Serving as a medic during a school event involves providing first aid, ensuring participant safety, and responding to medical emergencies. This role requires attentiveness, quick thinking, and effective communication.',
+      image: med,
+    },
   ];
   return (
     <>
@@ -44,10 +52,10 @@ function PastWork(props: PastWorkProps) {
               className="text-center max-w-3xl pt-10 border-2 border-gray-400 rounded-2xl"
             >
               <div className="relative mb-8">
-                <h2 className="relative text-4xl text-gray-400 pb-10 font-bold">{feature.name}</h2>
+                <h2 className="relative text-4xl text-gray-100 pb-10 font-bold">{feature.name}</h2>
                 <img src={feature.image} className="mx-auto w-80 drop-shadow-lg rounded-2xl" />
               </div>
-              <p className="text-lg text-black mb-6 pb-5 text-gray-400 mx-5">
+              <p className="text-lg text-black mb-6 pb-5 text-gray-100 mx-5">
                 {feature.description}
               </p>
             </div>

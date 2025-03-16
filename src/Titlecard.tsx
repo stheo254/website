@@ -1,4 +1,4 @@
-import myPic from './assets/20241210_140250(1).jpg';
+import myPic from './assets/head140250(1).png';
 
 type PastWorkProps = {
   sections: React.RefObject<HTMLDivElement | null>[];
@@ -8,20 +8,26 @@ type PastWorkProps = {
 function Titlecard(props: PastWorkProps) {
   return (
     <>
-      <main className="flex flex-wrap items-center justify-between p-8">
-        <div className="grid justify-items-start bg-[#000080]/90 p-10 rounded-4xl">
-          <h1 className="text-5xl font-light text-white mb-4">Stefanus Theo Chandra</h1>
-          <p className="text-white mb-8">a curious student</p>
+      <main className="relative flex items-center justify-between p-8 min-h-screen overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-x-0 bottom-0 -z-10 flex justify-center h-full overflow-hidden -mr-50">
+          <img
+            src={myPic}
+            alt="desc"
+            className="w-[100%] max-w-5xl object-contain object-bottom mb-32"
+          />
+        </div>
+
+        {/* Content Section */}
+        <div className="grid justify-items-start p-10 bg-white/10 backdrop-blur-md rounded-lg max-w-3xl z-10 -mt-40">
+          <h1 className="text-8xl font-light text-black mb-4">Stefanus Theo Chandra</h1>
+          <p className="text-black mb-8">a curious student</p>
           <button
             className="px-6 py-2 rounded-full bg-gray-600 text-white italic transition-transform transform hover:scale-110"
             onClick={() => props.scrollTo(6)}
           >
             CONTACT
           </button>
-        </div>
-
-        <div className="w-96 h-96 bg-gray-800 rounded-lg flex items-center justify-center mr-30">
-          <img src={myPic} alt="desc" className=" scale-y-[-1] rounded-2xl"></img>
         </div>
       </main>
     </>

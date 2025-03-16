@@ -31,7 +31,7 @@ const timelineData: TimelineItem[] = [
   {
     id: 3,
     content:
-      "After Studienkolleg,I started my tuition to another University before I started my Bachelor's degree program at Technische Universität Berlin. I moved because i dont feel that i am a great fit in my previous university. I study Technische Informatik, which translates to Computer Engineering.",
+      "After Studienkolleg,I started my tuition to another University before I started my Bachelor's degree program at Technische Universität Berlin. I moved because i dont feel that i am a great fit in my previous university.",
     label: 'TU BERLIN',
     color: 'April 2022 - Now',
     picture: tu,
@@ -43,28 +43,28 @@ const Timeline: React.FC = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center">
       {/* Vertical Line */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-black h-8/10 mt-25 "></div>
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-black h-9/10 mt-25"></div>
 
       {timelineData.map((item, index) => (
-        <div key={item.id} className="relative w-full flex items-center my-25 ">
+        <div key={item.id} className="relative w-full flex items-center my-35">
           {/* Left Description */}
           {index % 2 === 0 && (
             <>
-              <span className="absolute right-1/2 pr-20 text-sm italic -mt-45 mr-20 text-xl font-bold">
+              <span className="absolute right-1/2 pr-40 text-sm italic -mt-45 mr-20 text-xl font-bold">
                 {item.label}
               </span>
-              <span className="absolute right-1/2 pr-20 text-sm italic -mt-35 mr-20 text-l font-bold">
+              <span className="absolute right-1/2 pr-40 text-sm italic -mt-35 mr-20 text-l font-bold">
                 {item.color}
               </span>
-              <span className="absolute right-1/2 pr-20 text-sm italic max-w-100 ">
+              <span className="absolute right-1/2 pr-40 text-sm italic max-w-100">
                 {item.content}
               </span>
             </>
           )}
 
-          {/* Circle on the Line */}
+          {/* Circle on the Line (with Hover Effect) */}
           <div
-            className={`absolute left-1/2 transform -translate-x-1/2 w-32 h-32 flex items-center justify-center rounded-full overflow-hidden bg-black`}
+            className={`absolute left-1/2 transform -translate-x-1/2 w-64 h-64 flex items-center justify-center rounded-full overflow-hidden bg-black transition-transform duration-300 hover:scale-110`}
           >
             <img src={item.picture} alt={item.label} className="w-full h-full object-cover" />
           </div>
@@ -72,13 +72,13 @@ const Timeline: React.FC = () => {
           {/* Right Description */}
           {index % 2 !== 0 && (
             <>
-              <span className="absolute left-1/2 pl-20 text-sm italic -mt-40 mr-20 text-xl font-bold">
+              <span className="absolute left-1/2 pl-40 text-sm italic -mt-40 mr-20 text-xl font-bold">
                 {item.label}
               </span>
-              <span className="absolute left-1/2 pl-20 text-sm italic -mt-30 mr-20 text-l font-bold">
+              <span className="absolute left-1/2 pl-40 text-sm italic -mt-30 mr-20 text-l font-bold">
                 {item.color}
               </span>
-              <span className="absolute left-1/2 pl-20 text-sm italic max-w-100 ">
+              <span className="absolute left-1/2 pl-40 text-sm italic max-w-100">
                 {item.content}
               </span>
             </>
