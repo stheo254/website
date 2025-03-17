@@ -19,11 +19,11 @@ function Titlecard(props: PastWorkProps) {
         </div>
 
         {/* Content Section */}
-        <div className="grid justify-items-start p-10 bg-white/10 backdrop-blur-md rounded-lg max-w-3xl z-10 -mt-40">
-          <h1 className="text-8xl text-black mb-4 font-bold font-montserrat">
+        <div className="grid justify-items-start p-10  rounded-lg max-w-3xl z-10 -mt-40">
+          <h1 className="text-8xl text-black mb-4 font-bold font-montserrat text-left">
             Stefanus Theo Chandra
           </h1>
-          <p className="text-black mb-8 ">a curious student</p>
+          <p className="text-black mb-8  text-xl">a curious student</p>
           <button
             className="px-6 py-2 rounded-full bg-gray-600 text-white italic transition-transform transform hover:scale-110"
             onClick={() => props.scrollTo(6)}

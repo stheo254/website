@@ -42,7 +42,7 @@ const Timeline: React.FC = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center">
       {/* Vertical Line */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-black h-9/10 mt-25"></div>
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-black h-8/10 mt-25"></div>
 
       {timelineData.map((item, index) => (
         <div key={item.id} className="relative w-full flex items-center my-35">
@@ -63,7 +63,7 @@ const Timeline: React.FC = () => {
 
           {/* Circle on the Line (with Hover Effect) */}
           <div
-            className={`absolute left-1/2 transform -translate-x-1/2 w-64 h-64 flex items-center justify-center rounded-full overflow-hidden bg-black transition-transform duration-300 hover:scale-110`}
+            className={`absolute left-1/2 transform -translate-x-1/2 w-48 h-48 flex items-center justify-center rounded-full overflow-hidden bg-black transition-transform duration-300 hover:scale-110`}
           >
             <img src={item.picture} alt={item.label} className="w-full h-full object-cover" />
           </div>

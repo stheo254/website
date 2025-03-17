@@ -79,7 +79,7 @@ function App() {
           id="past"
           className="bg-[#4A4A4A] bg-center bg-cover"
           style={{
-            height: '300vh',
+            height: '200vh',
             borderTopRightRadius: '10%',
             borderTopLeftRadius: '10%',
             borderBottomLeftRadius: '10%',

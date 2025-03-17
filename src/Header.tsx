@@ -66,7 +66,7 @@ function Header(props: ScrollButtonsProps) {
         </a>
         <div className="text-black border rounded-full p-2 flex items-center justify-center transition-transform transform hover:scale-110">
           <img src={email} className="w-7" alt="Email Icon" />
-          <button onClick={copyToClipboard} className="pt-1 pl-1">
+          <button onClick={copyToClipboard} className="min-w-[200px] pt-1 pl-1">
             {copied ? 'Copied!' : 'stefanustheo21@gmail.com'}
           </button>
         </div>
