@@ -79,7 +79,7 @@ function App() {
           id="past"
           className="bg-[#4A4A4A] bg-center bg-cover"
           style={{
-            height: '200vh',
+            minHeight: '100vh',
             borderTopRightRadius: '10%',
             borderTopLeftRadius: '10%',
             borderBottomLeftRadius: '10%',
@@ -90,7 +90,7 @@ function App() {
           {' '}
           <h1
             ref={sections[2]}
-            className="text-sm p-1  border-1 border-gray-400 text-gray-400 rounded-full w-25 mx-auto mb-20"
+            className="text-lg p-1 border-1 border-gray-400 text-gray-400 rounded-full w-25 mx-auto mb-20"
           >
             Past Work
           </h1>
@@ -101,11 +101,11 @@ function App() {
           ref={sections[sections.length - 2]}
           style={{
             backgroundColor: 'white',
-            height: '150vh',
+            minHeight: '100vh',
             paddingTop: '2rem',
           }}
         >
-          <h2 className="text-md border-2 rounded-full w-30 mx-auto mb-20">My Journey</h2>
+          <h2 className="text-lg border-2 rounded-full w-30 mx-auto mb-20">My Journey</h2>
           <FadeIn>
             <Timeline />
           </FadeIn>

@@ -28,7 +28,7 @@ function Contact() {
   return (
     <>
       <div className="flex flex-wrap items-center justify-between p-10">
-        <div className="grid justify-items-start">
+        <div className="grid justify-items-start ml-20">
           <h1 className="text-3xl font-light text-gray-800 mt-10 pl-10 font-bold">Contact me:</h1>
           <div className="border-t-2 border-black w-full my-4 ml-10 -py-10"></div>
           <span className="text2-xl pl-10 font-bold">E-mail: stefanustheo21@gmail.com</span>
