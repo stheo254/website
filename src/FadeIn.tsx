@@ -7,13 +7,17 @@ import { useInView } from 'react-intersection-observer';
 interface FadeInProps {
   children: React.ReactNode;
   delay?: number; // Optional delay for the animation
-  direction?: 'top' | 'left' | 'right' | 'bottom'; // New: Fade direction
+  direction?: string;
+  rotate?: number; // Optional rotation in degrees
+  distance?: number; // How far it should fade in (in pixels)
 }
 
 export default function FadeIn({
   children,
   delay = 0,
   direction = 'bottom', // Default direction
+  rotate = 0, // Default: no rotation
+  distance = 50, // Default fade-in distance
 }: FadeInProps) {
   const controls = useAnimation();
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -24,29 +28,29 @@ export default function FadeIn({
     }
   }, [inView, controls]);
 
-  // Determine the initial position based on the direction
+  // Determine the initial position based on the direction and distance
   const getInitialPosition = () => {
     switch (direction) {
       case 'top':
-        return { y: -50 };
+        return { y: -distance };
       case 'bottom':
-        return { y: 50 };
+        return { y: distance };
       case 'left':
-        return { x: -50 };
+        return { x: -distance };
       case 'right':
-        return { x: 50 };
+        return { x: distance };
       default:
-        return { y: 50 };
+        return { y: distance };
     }
   };
 
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, ...getInitialPosition() }}
+      initial={{ opacity: 0, ...getInitialPosition(), rotate }}
       animate={controls}
       variants={{
-        visible: { opacity: 1, x: 0, y: 0 },
+        visible: { opacity: 1, x: 0, y: 0, rotate: 0 },
       }}
       transition={{ duration: 0.8, ease: 'easeOut', delay }}
     >

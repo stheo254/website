@@ -2,12 +2,14 @@ import stk from './assets/tu-kaiserslautern-100~_v-img__16__9__l_-1dc0e8f74459dd
 import tu from './assets/images.jpg';
 import binus from './assets/1.jpg';
 import more from './assets/iwqemages.png';
+import FadeIn from './FadeIn';
 type TimelineItem = {
   id: number;
   content: string;
   label: string;
   color: string;
   picture: string;
+  animation: string;
 };
 
 const timelineData: TimelineItem[] = [
@@ -18,6 +20,7 @@ const timelineData: TimelineItem[] = [
     label: 'SCHOOL',
     color: '2016-2019',
     picture: binus,
+    animation: 'top',
   },
   {
     id: 2,
@@ -26,6 +29,7 @@ const timelineData: TimelineItem[] = [
     label: 'Studienkolleg Kaiserslautern',
     color: 'March - June 2020',
     picture: stk,
+    animation: 'right',
   },
   {
     id: 3,
@@ -34,8 +38,16 @@ const timelineData: TimelineItem[] = [
     label: 'TU BERLIN',
     color: 'April 2022 - Now',
     picture: tu,
+    animation: 'left',
   },
-  { id: 4, content: 'There is more to come', label: '', color: '', picture: more },
+  {
+    id: 4,
+    content: 'There is more to come',
+    label: '',
+    color: '',
+    picture: more,
+    animation: 'top',
+  },
 ];
 
 const Timeline: React.FC = () => {
@@ -49,13 +61,13 @@ const Timeline: React.FC = () => {
           {/* Left Description */}
           {index % 2 === 0 && (
             <>
-              <span className="absolute right-1/2 pr-40 italic -mt-45 mr-20 text-l font-bold text-left">
+              <span className="absolute right-1/2 pr-30 italic -mt-45 mr-30 text-l font-bold text-left">
                 {item.label}
               </span>
-              <span className="absolute right-1/2 pr-40 italic -mt-35 mr-20 text-md font-bold text-left">
+              <span className="absolute right-1/2 pr-30 italic -mt-35 mr-30 text-md font-bold text-left">
                 {item.color}
               </span>
-              <span className="absolute right-1/2 pr-40 text-xs italic max-w-100 text-left">
+              <span className="absolute right-1/2 pr-30 text-md italic max-w-120 ">
                 {item.content}
               </span>
             </>
@@ -71,13 +83,13 @@ const Timeline: React.FC = () => {
           {/* Right Description */}
           {index % 2 !== 0 && (
             <>
-              <span className="absolute left-1/2 pl-40 italic -mt-40 mr-20 text-lg font-bold">
+              <span className="absolute left-1/2 pl-30 italic -mt-40 mr-20 text-lg font-bold">
                 {item.label}
               </span>
-              <span className="absolute left-1/2 pl-40 italic -mt-30 mr-20 text-md font-bold">
+              <span className="absolute left-1/2 pl-30 italic -mt-30 mr-20 text-md font-bold">
                 {item.color}
               </span>
-              <span className="absolute left-1/2 pl-40 text-xs italic max-w-100 text-left">
+              <span className="absolute left-1/2 pl-30  text-md italic max-w-120 ">
                 {item.content}
               </span>
             </>

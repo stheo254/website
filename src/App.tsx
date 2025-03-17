@@ -105,10 +105,8 @@ function App() {
             paddingTop: '2rem',
           }}
         >
-          <h2 className="text-lg border-2 rounded-full w-30 mx-auto mb-20">My Journey</h2>
-          <FadeIn>
-            <Timeline />
-          </FadeIn>
+          <h2 className="text-lg border-2 rounded-full w-30 mx-auto mb-5">My Journey</h2>
+          <Timeline />
         </section>
         <section
           id="contact"
