@@ -55,7 +55,7 @@ const Timeline: React.FC = () => {
               <span className="absolute right-1/2 pr-40 italic -mt-35 mr-20 text-md font-bold text-left">
                 {item.color}
               </span>
-              <span className="absolute right-1/2 pr-40 text-sm italic max-w-100 text-left">
+              <span className="absolute right-1/2 pr-40 text-xs italic max-w-100 text-left">
                 {item.content}
               </span>
             </>
@@ -71,13 +71,13 @@ const Timeline: React.FC = () => {
           {/* Right Description */}
           {index % 2 !== 0 && (
             <>
-              <span className="absolute left-1/2 pl-40 text-sm italic -mt-40 mr-20 text-l font-bold">
+              <span className="absolute left-1/2 pl-40 italic -mt-40 mr-20 text-lg font-bold">
                 {item.label}
               </span>
-              <span className="absolute left-1/2 pl-40 text-sm italic -mt-30 mr-20 text-md font-bold">
+              <span className="absolute left-1/2 pl-40 italic -mt-30 mr-20 text-md font-bold">
                 {item.color}
               </span>
-              <span className="absolute left-1/2 pl-40 text-sm italic max-w-100 text-left">
+              <span className="absolute left-1/2 pl-40 text-xs italic max-w-100 text-left">
                 {item.content}
               </span>
             </>
