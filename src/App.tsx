@@ -62,10 +62,10 @@ function App() {
           ref={sections[0]}
           style={sectionStyle('lightgray', '100vh', '-10px', 10)}
         >
-          <FadeIn>
+          <FadeIn direction="top">
             <Header scrollTo={scrollToSection} />
-            <Titlecard scrollTo={scrollToSection} sections={sections} />
           </FadeIn>
+          <Titlecard scrollTo={scrollToSection} sections={sections} />
         </section>
         <section
           id="about"
@@ -106,7 +106,9 @@ function App() {
           }}
         >
           <h2 className="text-lg border-2 rounded-full w-30 mx-auto mb-5">My Journey</h2>
-          <Timeline />
+          <FadeIn direction="left">
+            <Timeline />
+          </FadeIn>
         </section>
         <section
           id="contact"

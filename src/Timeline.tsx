@@ -16,7 +16,7 @@ const timelineData: TimelineItem[] = [
   {
     id: 1,
     content:
-      'Finished high school in Tangerang, Indonesia, my beautiful hometown! Majored in the A Levels Cambridge curriculum and Science, it provided me with the proper foundation of logical & critical thinking.',
+      'Finished high school in Tangerang, Indonesia. Majored in the A Levels Cambridge curriculum and Science, it provided me with the proper foundation of logical & critical thinking.',
     label: 'SCHOOL',
     color: '2016-2019',
     picture: binus,
