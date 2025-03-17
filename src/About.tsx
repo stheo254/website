@@ -1,5 +1,20 @@
 import FadeIn from './FadeIn';
+import clang from './assets/clang.png';
 function About() {
+  const techStack = [
+    { name: 'C Language', image: clang },
+    { name: 'TypeScript', image: '/images/typescript.png' },
+    { name: 'JavaScript', image: '/images/javascript.png' },
+    { name: 'Express', image: '/images/express.png' },
+    { name: 'Node.js', image: '/images/nodejs.png' },
+    { name: 'React', image: '/images/react.png' },
+    { name: 'Bootstrap', image: '/images/bootstrap.png' },
+    { name: 'Git', image: '/images/git.png' },
+    { name: 'Java', image: '/images/java.png' },
+    { name: 'CSS', image: '/images/css.png' },
+    { name: 'Tailwind CSS', image: '/images/tailwind.png' },
+    { name: 'MongoDB', image: '/images/mongodb.png' },
+  ];
   return (
     <>
       <h1 className="mt-30 text-left text-md border-2 rounded-full mx-auto w-25 flex justify-center">
@@ -97,6 +112,25 @@ function About() {
               </div>
             </FadeIn>
           ))}
+        </div>
+        <div className="py-12 px-6">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Technologies and Tools</h2>
+          <p className="text-lg text-gray-600 mb-10 max-w-4xl">
+            Using a combination of cutting-edge technologies and reliable open-source software, I
+            build user-focused, performant apps and websites.
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+            {techStack.map((tech) => (
+              <div
+                key={tech.name}
+                className="flex items-center gap-4 bg-gray-100 rounded-xl p-4 shadow-sm hover:scale-105 transition-transform"
+              >
+                <img src={tech.image} alt={tech.name} className="w-12 " />
+                <span className="text-lg text-gray-800 font-medium">{tech.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

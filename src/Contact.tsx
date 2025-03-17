@@ -29,9 +29,9 @@ function Contact() {
     <>
       <div className="flex flex-wrap items-center justify-between p-10">
         <div className="grid justify-items-start">
-          <h1 className="text-xl font-light text-gray-800 mt-10 pl-10">Contact me:</h1>
+          <h1 className="text-3xl font-light text-gray-800 mt-10 pl-10 font-bold">Contact me:</h1>
           <div className="border-t-2 border-black w-full my-4 ml-10 -py-10"></div>
-          <span className="text-l pl-10">E-mail: stefanustheo21@gmail.com</span>
+          <span className="text2-xl pl-10 font-bold">E-mail: stefanustheo21@gmail.com</span>
         </div>
 
         <div className="flex flex-col gap-6 p-4 justify-center items-center mr-20">
