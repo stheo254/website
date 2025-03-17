@@ -2,7 +2,6 @@ import stk from './assets/tu-kaiserslautern-100~_v-img__16__9__l_-1dc0e8f74459dd
 import tu from './assets/images.jpg';
 import binus from './assets/1.jpg';
 import more from './assets/iwqemages.png';
-import FadeIn from './FadeIn';
 type TimelineItem = {
   id: number;
   content: string;

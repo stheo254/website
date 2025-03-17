@@ -8,7 +8,6 @@ import clang from './assets/clang.png';
 import python from './assets/Python-logo-notext.svg.png';
 import haskell from './assets/haskell2.png';
 import duck from './assets/DuckDB_logo.svg.png';
-import { distance } from 'framer-motion';
 
 type PastWorkProps = {
   sections: React.RefObject<HTMLDivElement | null>[];
