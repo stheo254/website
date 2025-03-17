@@ -29,7 +29,7 @@ function Contact() {
   return (
     <>
       <div className="items-center justify-between p-10">
-        <FadeIn direction="left" distance={100}>
+        <FadeIn direction="right" distance={100}>
           <div className="max-w-4xl mx-auto px-6">
             <div className="bg-[#4A4A4A] rounded-xl py-12 text-center">
               <h2 className="text-3xl font-semibold mb-4 relative text-white">
@@ -49,7 +49,7 @@ function Contact() {
           </div>
         </FadeIn>
 
-        <FadeIn direction="right" distance={100}>
+        <FadeIn direction="top" distance={100}>
           <div className="flex flex-col pt-5 justify-center items-center text-sm ">
             <div>You can also find me here:</div>
             <div className="flex gap-6">
