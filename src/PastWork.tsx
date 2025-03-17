@@ -52,6 +52,7 @@ function PastWork(props: PastWorkProps) {
       description:
         'Serving as a medic during a school event involves providing first aid, ensuring participant safety, and responding to medical emergencies. This role requires attentiveness, quick thinking, and effective communication.',
       image: med,
+      lang: [],
       animation: 'right',
       distance: 150,
     },
@@ -71,9 +72,9 @@ function PastWork(props: PastWorkProps) {
                 <img src={feature.image} className="mx-auto w-80 drop-shadow-lg rounded-2xl" />
               </div>
               <hr className="w-4/5 mx-auto border-white mb-6" />
-              <p className="text-lg mb-6  text-white ">{feature.description}</p>
+              <p className="text-lg mb-6  text-white px-5">{feature.description}</p>
 
-              <hr className="w-4/5 mx-auto border-white " />
+              {feature.lang.length != 0 && <hr className="w-4/5 mx-auto border-white " />}
               <div className="flex flex-wrap justify-center">
                 {feature.lang?.map((lang) => <img src={lang} className="h-12 m-5"></img>)}
               </div>

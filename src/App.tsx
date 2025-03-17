@@ -3,10 +3,10 @@ import './App.css';
 import Header from './Header';
 import Titlecard from './Titlecard';
 import About from './About';
-import Contact from './Contact';
 import PastWork from './PastWork';
 import Timeline from './Timeline';
 import FadeIn from './FadeIn';
+import Contact2 from './contactv2';
 
 function App() {
   const sections = [
@@ -115,12 +115,12 @@ function App() {
           ref={sections[sections.length - 1]}
           style={{
             backgroundColor: 'lightgray',
-            height: '30vh',
+            height: 'auto',
             borderTopRightRadius: '20%',
             borderTopLeftRadius: '20%',
           }}
         >
-          <Contact />
+          <Contact2 />
         </section>
       </div>
     </>
