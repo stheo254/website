@@ -102,10 +102,12 @@ function About() {
                 <FadeIn rotate={45}>
                   <div
                     key={tech.name}
-                    className="flex items-center gap-4 bg-gray-100 rounded-xl p-4 shadow-sm hover:scale-105 transition-transform"
+                    className="flex items-center gap-4 bg-gray-100 rounded-xl p-4 shadow-sm hover:scale-105 transition-transform flex-wrap min-w-0"
                   >
                     <img src={tech.image} alt={tech.name} className=" h-12" />
-                    <span className="text-lg text-gray-800 font-medium">{tech.name}</span>
+                    <span className="text-lg text-gray-800 font-medium break-words whitespace-normal">
+                      {tech.name}
+                    </span>
                   </div>
                 </FadeIn>
               ))}
