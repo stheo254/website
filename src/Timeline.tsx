@@ -64,9 +64,11 @@ const Timeline: React.FC = () => {
           {index % 2 === 0 ? (
             <div className="grid justify-items-center items-center text-center w-1/2 pr-25">
               <FadeIn direction="left">
-                <div className="italic text-lg font-bold">{item.label}</div>
-                <div className="italic text-md font-bold">{item.color}</div>
-                <div className="italic text-md max-w-100 break-words">{item.content}</div>
+                <div className="italic text-lg font-bold text-right">{item.label}</div>
+                <div className="italic text-md font-bold text-right">{item.color}</div>
+                <div className="italic text-md max-w-100 break-words text-right">
+                  {item.content}
+                </div>
               </FadeIn>
             </div>
           ) : (
@@ -81,9 +83,9 @@ const Timeline: React.FC = () => {
           {index % 2 !== 0 ? (
             <div className="grid justify-items-center items-center text-center w-1/2 pl-25 whitespace-pre-wrap">
               <FadeIn direction="right">
-                <div className="italic text-lg font-bold">{item.label}</div>
-                <div className="italic text-md font-bold">{item.color}</div>
-                <div className="italic text-md max-w-100 break-words">{item.content}</div>
+                <div className="italic text-lg font-bold text-left">{item.label}</div>
+                <div className="italic text-md font-bold text-left">{item.color}</div>
+                <div className="italic text-md max-w-100 break-words text-left">{item.content}</div>
               </FadeIn>
             </div>
           ) : (

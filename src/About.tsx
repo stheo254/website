@@ -30,9 +30,7 @@ function About() {
   return (
     <>
       {' '}
-      <h1 className="mt-30 text-left text-md border-2 rounded-full mx-auto w-25 flex justify-center">
-        About me
-      </h1>
+      <h2 className="text-4xl font-bold text-gray-800 mb-4 mx-auto pt-30">About me</h2>
       <div className="min-h-screen flex flex-col items-center justify-center pt-8 -mt-10 mx-auto ">
         {/* First Item (Centered Alone) */}
         <FadeIn direction="top">

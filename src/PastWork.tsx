@@ -59,7 +59,7 @@ function PastWork(props: PastWorkProps) {
   ];
   return (
     <>
-      <div className="relative flex flex-wrap justify-center min-h-screen items-start gap-x-5 gap-y-10 pb-10 px-65">
+      <div className="relative grid grid-cols-2 justify-center min-h-screen items-start gap-x-5 gap-y-10 pb-10 px-45">
         {features.map((feature) => (
           <FadeIn direction={feature.animation} distance={feature.distance}>
             <div
