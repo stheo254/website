@@ -20,7 +20,7 @@ function Header(props: ScrollButtonsProps) {
   };
   return (
     // Header.jsx
-    <header className="flex flex-wrap justify-around items-center top-0 p-4 relative">
+    <header className="flex flex-wrap justify-around items-center top-0 p-4 relative ml-4">
       {/* Left Navigation */}
       <div className="flex items-center space-x-4 sm:w-auto w-full justify-start sm:justify-start ">
         <nav className="flex items-end space-x-4">
@@ -53,7 +53,7 @@ function Header(props: ScrollButtonsProps) {
       </div>
 
       {/* Right Section (CV and Email) */}
-      <div className="flex items-center gap-4 sm:w-auto w-full justify-end mt-4 sm:mt-0">
+      <div className="flex items-center gap-4 sm:w-auto w-full justify-end mt-4 sm:mt-0 mr-4">
         <a
           href="https://drive.google.com/uc?export=download&id=1EnwESEtgzeUQdHjNH0ErV3KHlRUm2GRW"
           target="_blank"

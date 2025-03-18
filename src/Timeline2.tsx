@@ -58,8 +58,8 @@ const Timeline2: React.FC = () => {
           <div key={index} className="relative pb-8 flex items-center">
             {index !== 0 && (
               <div
-                className="absolute -left-5 top-0 w-1 bg-black "
-                style={{ height: 'calc(50% - 2rem)' }}
+                className="absolute -left-5 top-0 bg-black "
+                style={{ height: 'calc(50% - 2rem)', width: '2px' }}
               ></div>
             )}
 
@@ -67,7 +67,7 @@ const Timeline2: React.FC = () => {
 
             <div className="relative flex items-center mt-5">
               {/* Timeline Dot */}
-              <div className="w-4 h-4 bg-gray-400 rounded-full absolute -left-[26px] " />
+              <div className="w-4 h-4 bg-gray-400 rounded-full absolute -left-[27px] " />
 
               {/* Logo */}
               <FadeIn direction="left">
@@ -84,7 +84,7 @@ const Timeline2: React.FC = () => {
             {index !== timelineData.length - 1 && (
               <div
                 className="absolute -left-5 w-1 bg-black pb-5 "
-                style={{ top: 'calc(50% + 1rem)', height: 'calc(50% - 1rem)' }}
+                style={{ top: 'calc(50% + 1rem)', height: 'calc(50% - 1rem)', width: '2px' }}
               ></div>
             )}
             {/* Content */}
