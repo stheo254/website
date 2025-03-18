@@ -11,7 +11,7 @@ function Titlecard(props: PastWorkProps) {
     <>
       <main className="relative flex items-center justify-between p-8 min-h-screen overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 bottom-0 -z-10 flex justify-center -ml-40 md:ml-0">
+        <div className="absolute inset-0 bottom-0 -z-10 flex justify-center -ml-50 md:ml-0">
           <img src={myPic} alt="desc" className=" h-full max-w-none object-cover md:object-fill " />
         </div>
         {/* Content Section */}
@@ -26,7 +26,15 @@ function Titlecard(props: PastWorkProps) {
             >
               Stefanus Theo Chandra
             </h1>
-            <p className="text-black mb-6 sm:mb-8 text-lg sm:text-xl">a curious student</p>
+            <p
+              className="text-black mb-6 sm:mb-8 text-lg sm:text-xl "
+              style={{
+                textShadow:
+                  '1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white',
+              }}
+            >
+              a curious student
+            </p>
             <button
               className="px-6 py-2 rounded-full bg-gray-600 text-white italic transition-transform transform hover:scale-110"
               onClick={() => props.scrollTo(6)}

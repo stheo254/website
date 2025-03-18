@@ -52,8 +52,8 @@ const timelineData: TimelineItem[] = [
 
 const Timeline2: React.FC = () => {
   return (
-    <section className="max-w-5xl mx-auto px-6">
-      <div className="relative">
+    <section className="max-w-5xl mx-auto px-6 ">
+      <div className="relative ml-5 lg:ml-0">
         {timelineData.map((exp, index) => (
           <div key={index} className="relative pb-8 flex items-center">
             {index !== 0 && (

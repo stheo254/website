@@ -77,9 +77,10 @@ function App() {
         </section>
         <section
           id="past"
-          className="bg-[#4A4A4A] bg-center bg-cover rounded-xl"
+          className="bg-[#4A4A4A] bg-center bg-cover rounded-4xl"
           style={{
             minHeight: '90vh',
+            borderRadius: '2%',
             paddingTop: '2rem',
           }}
         >
