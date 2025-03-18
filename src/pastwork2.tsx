@@ -1,4 +1,4 @@
-import serverjpg from './assets/server.jpg';
+import serverjpg from './assets/—Pngtree—web server vector icon_5462090(1).png';
 import board from './assets/swappy-20250315_001649.png';
 import db from './assets/kisspng-computer-icons-scalable-vector-graphics-database-p-folder-networking-icons-1-6-free-vector-icons-5c6c5e4f61a510.1562063015506059034.png';
 import med from './assets/il_fullxfull.4832901302_jj39.webp';

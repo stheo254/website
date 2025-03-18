@@ -97,7 +97,7 @@ function App() {
           ref={sections[sections.length - 2]}
           style={{
             backgroundColor: 'white',
-            minHeight: '100vh',
+            minHeight: '50vh',
             paddingTop: '2rem',
           }}
         >

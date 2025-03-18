@@ -58,8 +58,8 @@ const Timeline2: React.FC = () => {
           <div key={index} className="relative pb-8 flex items-center">
             {index !== 0 && (
               <div
-                className="absolute -left-5 top-0 w-1 bg-black -mt-25 sm:-mt-10 md:-mt-8"
-                style={{ height: 'calc(50% - 1rem)' }}
+                className="absolute -left-5 top-0 w-1 bg-black "
+                style={{ height: 'calc(50% - 2rem)' }}
               ></div>
             )}
 
