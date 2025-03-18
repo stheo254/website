@@ -4,11 +4,9 @@ import Header from './Header';
 import Titlecard from './Titlecard';
 import About from './About';
 import PastWork from './PastWork';
-import Timeline from './Timeline';
 import FadeIn from './FadeIn';
 import Contact2 from './contactv2';
 import Timeline2 from './Timeline2';
-import Timeline3 from './timeline3';
 
 function App() {
   const sections = [
