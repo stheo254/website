@@ -72,7 +72,7 @@ function PastWork(props: PastWorkProps) {
                 <img src={feature.image} className="mx-auto w-80 drop-shadow-lg rounded-2xl" />
               </div>
               <hr className="w-4/5 mx-auto border-white mb-6" />
-              <p className="text-lg mb-6  text-white px-5">{feature.description}</p>
+              <p className="text-lg mb-6  text-white p-2">{feature.description}</p>
 
               {feature.lang.length != 0 && <hr className="w-4/5 mx-auto border-white " />}
               <div className="flex flex-wrap justify-center">

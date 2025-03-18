@@ -90,7 +90,7 @@ function App() {
           {' '}
           <h1
             ref={sections[2]}
-            className="text-lg p-1 border-1 border-gray-400 text-gray-400 rounded-full w-25 mx-auto mb-20"
+            className="text-lg p-1 border-1 border-white text-gray-400 rounded-full w-25 mx-auto mb-20"
           >
             Past Work
           </h1>

@@ -29,70 +29,34 @@ function About() {
   ];
   return (
     <>
+      {' '}
       <h1 className="mt-30 text-left text-md border-2 rounded-full mx-auto w-25 flex justify-center">
         About me
       </h1>
-
-      <div className="min-h-screen flex flex-col items-center justify-center p-8 -mt-10">
+      <div className="min-h-screen flex flex-col items-center justify-center pt-8 -mt-10 mx-auto max-w-3xl">
         {/* First Item (Centered Alone) */}
         <FadeIn direction="top">
-          <div key="intro" className="relative pl-16 max-w-2xl mb-16 mt-10">
-            <span className="absolute left-0 top-1/2 -translate-y-1/2 -mt-5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 50 50"
-                className="text-gray-600"
-              >
-                <circle cx="25" cy="25" r="20" stroke="currentColor" strokeWidth="4" fill="none" />
-              </svg>
-            </span>
-
+          <div key="intro" className="relative max-w-3xl mb-16 mt-10">
             <p className="text-lg text-black">
-              Hi, I'm Theo—a curious and driven Computer Engineering student eager to deepen my
-              understanding of the technologies shaping our world. I’m passionate about improving my
-              programming skills and exploring how systems work at a fundamental level.
+              Hi, I'm Theo—a <span className="font-bold">curious and driven</span> Computer
+              Engineering student eager to deepen my understanding of the technologies shaping our
+              world. I’m passionate about{' '}
+              <span className="font-bold">improving my programming skills</span> and{' '}
+              <span className="font-bold">exploring how systems work at a fundamental level </span>
+              .I’m particularly interested in computer architecture and cybersecurity. I enjoy
+              learning how hardware and software interact and tackling the challenges of protecting
+              digital systems.
             </p>
           </div>
         </FadeIn>
 
         {/* Remaining Items (2x2 Grid) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl ">
-          {[
-            'I’m particularly interested in computer architecture and cybersecurity. I enjoy learning how hardware and software interact and tackling the challenges of protecting digital systems.',
-            'Outside academics, I enjoy computer games—especially team-oriented ones where collaboration matters as much as individual skill. I also play badminton, which helps me stay active and sharp',
-          ].map((item, index) => (
-            <FadeIn direction={index % 2 == 0 ? 'left' : 'right'}>
-              <div key={index} className="relative pl-16 flex items-center">
-                <span className="absolute left-0 top-1/2 -translate-y-1/2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 50 50"
-                    className="text-gray-600"
-                  >
-                    <circle
-                      cx="25"
-                      cy="25"
-                      r="20"
-                      stroke="currentColor"
-                      strokeWidth="4"
-                      fill="none"
-                    />
-                  </svg>
-                </span>
-
-                <p className="text-lg text-black">{item}</p>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
         <div className="py-12 px-6">
           <FadeIn direction="left">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Technologies and Tools</h2>
-            <p className="text-lg text-gray-600 mb-10 max-w-4xl">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4 mx-auto">
+              Technologies and Tools
+            </h2>
+            <p className="text-lg text-gray-600 mb-10 max-w-4xl mx-auto">
               Using a combination of cutting-edge technologies and reliable open-source software, I
               build user-focused, performant apps and websites.
             </p>
@@ -105,7 +69,7 @@ function About() {
                     className="flex items-center gap-4 bg-gray-100 rounded-xl p-4 shadow-sm hover:scale-105 transition-transform flex-wrap min-w-0"
                   >
                     <img src={tech.image} alt={tech.name} className=" h-12" />
-                    <span className="text-lg text-gray-800 font-medium break-words whitespace-normal">
+                    <span className="text-lg text-gray-800 font-medium break-words whitespace-normal text-center">
                       {tech.name}
                     </span>
                   </div>
