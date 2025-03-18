@@ -67,7 +67,7 @@ function About() {
                     className="flex items-center gap-4 bg-gray-100 rounded-xl p-4 shadow-sm hover:scale-105 transition-transform flex-wrap min-w-0"
                   >
                     <img src={tech.image} alt={tech.name} className=" h-12" />
-                    <span className="text-lg text-gray-800 font-medium break-words whitespace-normal text-center ">
+                    <span className="text-lg text-gray-800 font-medium break-words whitespace-normal text-center truncate">
                       {tech.name}
                     </span>
                   </div>

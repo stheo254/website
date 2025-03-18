@@ -20,7 +20,7 @@ function Header(props: ScrollButtonsProps) {
   };
   return (
     // Header.jsx
-    <header className="flex flex-wrap justify-around items-center top-0 p-4 relative ml-4">
+    <header className="flex flex-wrap justify-around items-center top-0 p-4 relative">
       {/* Left Navigation */}
       <div className="flex items-center space-x-4 sm:w-auto w-full justify-start sm:justify-start ">
         <nav className="flex items-end space-x-4">
@@ -64,9 +64,9 @@ function Header(props: ScrollButtonsProps) {
             CV
           </button>
         </a>
-        <div className="text-black border rounded-full p-2 flex items-center justify-center transition-transform transform hover:scale-110">
+        <div className="text-black border rounded-full p-2 flex items-center justify-center transition-transform transform hover:scale-110 ">
           <img src={email} className="w-7" alt="Email Icon" />
-          <button onClick={copyToClipboard} className="min-w-[200px] pt-1 pl-1">
+          <button onClick={copyToClipboard} className="min-w-[200px] pt-1 pl-1 truncate">
             {copied ? 'Copied!' : 'stefanustheo21@gmail.com'}
           </button>
         </div>
