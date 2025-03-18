@@ -59,13 +59,13 @@ function PastWork(props: PastWorkProps) {
   ];
   return (
     <>
-      <div className="relative grid grid-cols-2 justify-center min-h-screen items-start gap-x-5 gap-y-10 pb-10 px-45">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 min-h-screen items-start gap-8 px-6 sm:px-12 justify-items-center">
         {features.map((feature) => (
           <FadeIn direction={feature.animation} distance={feature.distance}>
             <div
               ref={feature.id == 0 ? null : props.sections[feature.id + 2]}
               key={feature.id}
-              className="text-center max-w-xl pt-10 border-2 border-gray-400 rounded-xl bg-gray-800/30"
+              className="text-center max-w-xl pt-10 border-2 border-gray-400 rounded-xl bg-gray-800/30 justify-self-center"
             >
               <div className="relative mb-8">
                 <h2 className="relative text-4xl text-gray-100 pb-10 font-bold">{feature.name}</h2>

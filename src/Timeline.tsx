@@ -54,45 +54,46 @@ const Timeline: React.FC = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center mb-10 ">
       {/* Vertical Line */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-black h-15/20 mt-52"></div>
-      {timelineData.map((item, index) => (
-        <div
-          key={item.id}
-          className="relative w-3/4 flex justify-between items-center max-w-5xl  my-20"
-        >
-          {/* Left Description */}
-          {index % 2 === 0 ? (
-            <div className="grid justify-items-center items-center text-center w-1/2 pr-25">
-              <FadeIn direction="left">
-                <div className="italic text-lg font-bold text-right">{item.label}</div>
-                <div className="italic text-md font-bold text-right">{item.color}</div>
-                <div className="italic text-md max-w-100 break-words text-right">
-                  {item.content}
-                </div>
-              </FadeIn>
-            </div>
-          ) : (
-            <div className="w-1/2" /> // Empty space for left alignment on odd items
-          )}
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-black h-7/10 mt-52 md:block"></div>
+      <div className="flex flex-col justify-between h-full w-full max-w-5xl space-y-50 mx-auto my-20">
+        {timelineData.map((item, index) => (
+          <div key={item.id} className="relative flex flex-col items-center w-full">
+            {/* Left Description */}
+            {index % 2 === 0 ? (
+              <div className="grid justify-items-start items-center text-center w-1/2 pr-25">
+                <FadeIn direction="left">
+                  <div className="italic text-lg font-bold text-right">{item.label}</div>
+                  <div className="italic text-md font-bold text-right">{item.color}</div>
+                  <div className="italic text-md max-w-100 break-words text-right">
+                    {item.content}
+                  </div>
+                </FadeIn>
+              </div>
+            ) : (
+              <div className="w-1/2" /> // Empty space for left alignment on odd items
+            )}
 
-          {/* Circle on the Line (with Hover Effect) */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-48 h-48 flex items-center justify-center rounded-full overflow-hidden bg-black transition-transform duration-300 hover:scale-110">
-            <img src={item.picture} alt={item.label} className="w-full h-full object-cover" />
-          </div>
-          {/* Right Description */}
-          {index % 2 !== 0 ? (
-            <div className="grid justify-items-center items-center text-center w-1/2 pl-25 whitespace-pre-wrap">
-              <FadeIn direction="right">
-                <div className="italic text-lg font-bold text-left">{item.label}</div>
-                <div className="italic text-md font-bold text-left">{item.color}</div>
-                <div className="italic text-md max-w-100 break-words text-left">{item.content}</div>
-              </FadeIn>
+            {/* Circle on the Line (with Hover Effect) */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-36 h-36  md:w-48 md:h-48 flex items-center justify-center rounded-full overflow-hidden bg-black transition-transform duration-300 hover:scale-110">
+              <img src={item.picture} alt={item.label} className="w-full h-full object-cover" />
             </div>
-          ) : (
-            <div className="w-1/2" /> // Empty space for right alignment on even items
-          )}
-        </div>
-      ))}
+            {/* Right Description */}
+            {index % 2 !== 0 ? (
+              <div className="grid justify-items-center items-center text-center w-1/2 pl-25 whitespace-pre-wrap">
+                <FadeIn direction="right">
+                  <div className="italic text-lg font-bold text-left">{item.label}</div>
+                  <div className="italic text-md font-bold text-left">{item.color}</div>
+                  <div className="italic text-md max-w-100 break-words text-left">
+                    {item.content}
+                  </div>
+                </FadeIn>
+              </div>
+            ) : (
+              <div className="w-1/2" /> // Empty space for right alignment on even items
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

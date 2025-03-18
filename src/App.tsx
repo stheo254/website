@@ -43,7 +43,7 @@ function App() {
     margintop: string,
     z: number,
   ): React.CSSProperties => ({
-    height: height,
+    minHeight: height,
     marginTop: margintop,
     position: 'relative',
     zIndex: z,
