@@ -7,6 +7,8 @@ import PastWork from './PastWork';
 import Timeline from './Timeline';
 import FadeIn from './FadeIn';
 import Contact2 from './contactv2';
+import Timeline2 from './Timeline2';
+import Timeline3 from './timeline3';
 
 function App() {
   const sections = [
@@ -77,24 +79,20 @@ function App() {
         </section>
         <section
           id="past"
-          className="bg-[#4A4A4A] bg-center bg-cover"
+          className="bg-[#4A4A4A] bg-center bg-cover rounded-xl"
           style={{
-            minHeight: '100vh',
-            borderTopRightRadius: '10%',
-            borderTopLeftRadius: '10%',
-            borderBottomLeftRadius: '10%',
-            borderBottomRightRadius: '10%',
+            minHeight: '90vh',
             paddingTop: '2rem',
           }}
         >
           {' '}
           <h1
             ref={sections[2]}
-            className="text-lg p-1 border-1 border-white text-gray-400 rounded-full w-25 mx-auto mb-20"
+            className="text-lg p-1 border-1 border-white text-white rounded-full w-25 mx-auto mb-20"
           >
             Past Work
           </h1>
-          <PastWork scrollTo={handleScroll} sections={sections} />
+          <PastWork sections={sections} scrollTo={handleScroll}></PastWork>
         </section>
         <section
           id="journey"
@@ -105,9 +103,9 @@ function App() {
             paddingTop: '2rem',
           }}
         >
-          <h2 className="text-lg border-2 rounded-full w-30 mx-auto mb-5">My Journey</h2>
-          <FadeIn direction="left">
-            <Timeline />
+          <FadeIn>
+            <h2 className="text-lg border-2 rounded-full w-30 mx-auto mb-5">My Journey</h2>
+            <Timeline2 />
           </FadeIn>
         </section>
         <section

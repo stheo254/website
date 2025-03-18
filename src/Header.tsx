@@ -20,9 +20,9 @@ function Header(props: ScrollButtonsProps) {
   };
   return (
     // Header.jsx
-    <header className="flex flex-wrap justify-between items-center p-6 top-0 relative">
+    <header className="flex flex-wrap justify-around items-center top-0 p-4 relative">
       {/* Left Navigation */}
-      <div className="flex items-center space-x-4 sm:w-auto w-full justify-start sm:justify-start ml-20">
+      <div className="flex items-center space-x-4 sm:w-auto w-full justify-start sm:justify-start ">
         <nav className="flex items-end space-x-4">
           <button
             className="font-bold text-black hover:underline"

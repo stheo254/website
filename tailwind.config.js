@@ -3,6 +3,7 @@ export default {
   content: [
     './index.html',
     './src/**/*.{js,ts,jsx,tsx}', // Adjust for your project structure
+    './node_modules/flyonui/dist/js/*.js',
   ],
   theme: {
     extend: {
@@ -12,5 +13,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('flyonui'), require('flyonui/plugin')],
 };

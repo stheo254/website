@@ -9,12 +9,7 @@ import python from './assets/Python-logo-notext.svg.png';
 import haskell from './assets/haskell2.png';
 import duck from './assets/DuckDB_logo.svg.png';
 
-type PastWorkProps = {
-  sections: React.RefObject<HTMLDivElement | null>[];
-  scrollTo: (e: React.WheelEvent) => void;
-};
-
-function PastWork(props: PastWorkProps) {
+function PastWork2() {
   const features = [
     {
       id: 0,
@@ -58,31 +53,34 @@ function PastWork(props: PastWorkProps) {
     },
   ];
   return (
-    <>
-      <div className="relative grid grid-cols-1 md:grid-cols-2 min-h-screen items-start gap-8 px-6 sm:px-12 justify-items-center pb-10">
-        {features.map((feature) => (
-          <FadeIn direction={feature.animation} distance={feature.distance}>
-            <div
-              ref={feature.id == 0 ? null : props.sections[feature.id + 2]}
-              key={feature.id}
-              className="text-center max-w-xl pt-10 border-2 border-gray-400 rounded-xl bg-gray-800/30 justify-self-center"
-            >
-              <div className="relative mb-8">
-                <h2 className="relative text-4xl text-gray-100 pb-10 font-bold">{feature.name}</h2>
-                <img src={feature.image} className="mx-auto w-80 drop-shadow-lg rounded-2xl" />
-              </div>
-              <hr className="w-4/5 mx-auto border-white mb-6" />
-              <p className="text-lg mb-6  text-white p-2">{feature.description}</p>
+    <section className="max-w-5xl mx-auto  px-6">
+      <div className="relative ">
+        {features.map((exp, index) => (
+          <div key={index} className="pb-3 flex items-start ">
+            {/* Timeline Dot */}
+            <div className="absolute -left-[5px] w-3 h-3 bg-gray-400 rounded-full " />
 
-              {feature.lang.length != 0 && <hr className="w-4/5 mx-auto border-white " />}
-              <div className="flex flex-wrap justify-center">
-                {feature.lang?.map((lang) => <img src={lang} className="h-12 m-5"></img>)}
+            {/* Logo */}
+            <div className="border-l-4 flex items-start mt-5 pl-5">
+              <img
+                src={exp.image}
+                alt={exp.name}
+                className="w-16 h-16 rounded-full object-cover border border-gray-300 shadow-md"
+              />
+
+              {/* Content */}
+              <div className="ml-8 flex flex-col sm:flex-row sm:justify-between w-full">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-400 text-left">{exp.name}</h3>
+                  <p className="text-white text-left">{exp.description}</p>
+                </div>
               </div>
             </div>
-          </FadeIn>
+          </div>
         ))}
       </div>
-    </>
+    </section>
   );
 }
-export default PastWork;
+
+export default PastWork2;

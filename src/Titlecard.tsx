@@ -11,12 +11,8 @@ function Titlecard(props: PastWorkProps) {
     <>
       <main className="relative flex items-center justify-between p-8 min-h-screen overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-x-0 bottom-0 -z-10 flex justify-center h-full overflow-hidden mr-30 md:-mr-50">
-          <img
-            src={myPic}
-            alt="desc"
-            className="w-[100%] max-w-5xl object-contain object-bottom "
-          />
+        <div className="absolute inset-0 bottom-0 -z-10 flex justify-center  ">
+          <img src={myPic} alt="desc" className="w-[100%] max-w-5xl object-cover " />
         </div>
         {/* Content Section */}
         <FadeIn direction="left" distance={100}>
