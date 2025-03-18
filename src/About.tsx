@@ -33,10 +33,10 @@ function About() {
       <h1 className="mt-30 text-left text-md border-2 rounded-full mx-auto w-25 flex justify-center">
         About me
       </h1>
-      <div className="min-h-screen flex flex-col items-center justify-center pt-8 -mt-10 mx-auto max-w-3xl">
+      <div className="min-h-screen flex flex-col items-center justify-center pt-8 -mt-10 mx-auto ">
         {/* First Item (Centered Alone) */}
         <FadeIn direction="top">
-          <div key="intro" className="relative max-w-3xl mb-16 mt-10">
+          <div key="intro" className="relative max-w-4xl mb-16 mt-10">
             <p className="text-lg text-black">
               Hi, I'm Theo—a <span className="font-bold">curious and driven</span> Computer
               Engineering student eager to deepen my understanding of the technologies shaping our
