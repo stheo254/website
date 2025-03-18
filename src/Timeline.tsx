@@ -74,11 +74,9 @@ const Timeline: React.FC = () => {
             )}
 
             {/* Circle on the Line (with Hover Effect) */}
-            <FadeIn rotate={360}>
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-36 h-36  md:w-48 md:h-48 flex items-center justify-center rounded-full overflow-hidden bg-black transition-transform duration-300 hover:scale-110">
-                <img src={item.picture} alt={item.label} className="w-full h-full object-cover" />
-              </div>
-            </FadeIn>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-36 h-36  md:w-48 md:h-48 flex items-center justify-center rounded-full overflow-hidden bg-black transition-transform duration-300 hover:scale-110">
+              <img src={item.picture} alt={item.label} className="w-full h-full object-cover" />
+            </div>
             {/* Right Description */}
             {index % 2 !== 0 ? (
               <div className="grid justify-items-center items-center text-center w-1/2 pl-25 whitespace-pre-wrap">
