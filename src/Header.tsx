@@ -55,7 +55,7 @@ function Header(props: ScrollButtonsProps) {
       {/* Right Section (CV and Email) */}
       <div className="flex items-center gap-4 w-auto justify-end mt-4 ">
         <a
-          href="https://drive.google.com/uc?export=download&id=1EnwESEtgzeUQdHjNH0ErV3KHlRUm2GRW"
+          href="https://drive.google.com/uc?export=download&id=1QPqhgcKlIv_bfK9K9BZtnARFLlDZ46n7"
           target="_blank"
           rel="noopener noreferrer"
           download="your-file.pdf"
