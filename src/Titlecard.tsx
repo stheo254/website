@@ -27,7 +27,7 @@ function Titlecard(props: PastWorkProps) {
               Stefanus Theo Chandra
             </h1>
             <p
-              className="text-black mb-6 sm:mb-8 text-lg sm:text-xl "
+              className="text-black mb-6 sm:mb-8 text-lg sm:text-xl p-4"
               style={{
                 textShadow:
                   '1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white',
@@ -36,7 +36,7 @@ function Titlecard(props: PastWorkProps) {
               a curious student
             </p>
             <button
-              className="px-6 py-2 rounded-full bg-gray-600 text-white italic transition-transform transform hover:scale-110"
+              className="px-6 py-2 rounded-full bg-gray-600 text-white italic transition-transform transform hover:scale-110 m-4"
               onClick={() => props.scrollTo(6)}
             >
               CONTACT
