@@ -1,4 +1,3 @@
-import myPic from './assets/head140250(1).png';
 import FadeIn from './FadeIn';
 import myPic2 from './assets/20241210_140250(1).png';
 
