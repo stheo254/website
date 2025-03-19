@@ -1,7 +1,7 @@
 import serverjpg from './assets/—Pngtree—web server vector icon_5462090(1).png';
 import board from './assets/swappy-20250315_001649.png';
-import db from './assets/kisspng-computer-icons-scalable-vector-graphics-database-p-folder-networking-icons-1-6-free-vector-icons-5c6c5e4f61a510.1562063015506059034.png';
-import med from './assets/il_fullxfull.4832901302_jj39.webp';
+import db from './assets/information_5134979.png';
+import med from './assets/Doctor-Symbol-Caduceus-PNG-Picture.png';
 import FadeIn from './FadeIn';
 
 import clang from './assets/clang.png';
@@ -59,7 +59,7 @@ function PastWork(props: PastWorkProps) {
   ];
   return (
     <>
-      <div className="relative grid grid-cols-1 md:grid-cols-2 min-h-screen items-start gap-y-8 gap-x-4 px-6 sm:px-12 justify-items-center pb-10 mx-0 lg:mx-32">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 min-h-screen items-start gap-y-8 gap-x-4 px-6 sm:px-12 justify-items-center pb-10 mx-5 lg:mx-32">
         {features.map((feature) => (
           <FadeIn direction={feature.animation} distance={feature.distance}>
             <div
@@ -67,12 +67,12 @@ function PastWork(props: PastWorkProps) {
               key={feature.id}
               className="text-center max-w-xl pt-10 border-2 border-gray-400 rounded-xl bg-gray-800/30 justify-self-center"
             >
-              <div className="relative mb-8">
+              <div className="relative mb-8 px-5">
                 <h2 className="relative text-4xl text-gray-100 pb-10 font-bold">{feature.name}</h2>
                 <img src={feature.image} className="mx-auto w-80 drop-shadow-lg rounded-2xl" />
               </div>
               <hr className="w-4/5 mx-auto border-white mb-6" />
-              <p className="text-lg mb-6  text-white p-2">{feature.description}</p>
+              <p className="text-lg mb-6  text-white p-5">{feature.description}</p>
 
               {feature.lang.length != 0 && <hr className="w-4/5 mx-auto border-white " />}
               <div className="flex flex-wrap justify-center">

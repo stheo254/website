@@ -34,7 +34,7 @@ function About() {
       <div className="flex flex-col items-center justify-start pt-8 mx-auto ">
         {/* First Item (Centered Alone) */}
         <FadeIn direction="top">
-          <div key="intro" className="relative max-w-4xl mb-16 mt-10">
+          <div key="intro" className="relative max-w-4xl mb-16 mt-10 mx-10">
             <p className="text-lg text-black">
               Hi, I'm Theo—a <span className="font-bold">curious and driven</span> Computer
               Engineering student eager to deepen my understanding of the technologies shaping our
@@ -49,7 +49,7 @@ function About() {
         </FadeIn>
 
         {/* Remaining Items (2x2 Grid) */}
-        <div className="py-12 px-6">
+        <div className="py-12 px-6 mx-5">
           <FadeIn direction="left">
             <h2 className="text-4xl font-bold text-gray-800 mb-4 mx-auto">
               Technologies and Tools
@@ -61,13 +61,10 @@ function About() {
 
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 gap-6">
               {techStack.map((tech) => (
-                <FadeIn rotate={45}>
-                  <div
-                    key={tech.name}
-                    className="flex items-center gap-4 bg-gray-100 rounded-xl p-4 shadow-sm hover:scale-105 transition-transform flex-wrap min-w-0"
-                  >
-                    <img src={tech.image} alt={tech.name} className=" h-12" />
-                    <span className="text-lg text-gray-800 font-medium break-words whitespace-normal text-center truncate">
+                <FadeIn key={tech.name} rotate={45}>
+                  <div className="flex flex-col sm:flex-row items-center gap-4 bg-gray-100 rounded-xl p-4 shadow-sm hover:scale-105 transition-transform min-w-0 overflow-hidden">
+                    <img src={tech.image} alt={tech.name} className="h-12 w-12" />
+                    <span className="text-md sm:text-lg text-gray-800 font-medium break-words whitespace-normal text-center">
                       {tech.name}
                     </span>
                   </div>
