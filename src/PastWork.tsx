@@ -54,7 +54,7 @@ function PastWork(props: PastWorkProps) {
           <FadeIn direction={feature.animation} distance={feature.distance} key={feature.id}>
             <div
               ref={feature.id == 0 ? null : props.sections[feature.id + 2]}
-              className="text-center max-w-xl pt-10 border-2 border-gray-400 rounded-xl bg-gray-800/30 justify-self-center h-full flex flex-col min-h-[550px]"
+              className="text-center max-w-xl pt-10 border-2 border-gray-400 rounded-xl justify-self-center h-full flex flex-col min-h-[550px]"
             >
               {/* Title and First Line */}
               <div className="mb-8 px-5">

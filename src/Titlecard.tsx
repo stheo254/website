@@ -1,5 +1,6 @@
 import myPic from './assets/head140250(1).png';
 import FadeIn from './FadeIn';
+import myPic2 from './assets/20241210_140250(1).png';
 
 type PastWorkProps = {
   sections: React.RefObject<HTMLDivElement | null>[];
@@ -12,7 +13,11 @@ function Titlecard(props: PastWorkProps) {
       <main className="relative flex items-center justify-between p-8 min-h-screen overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 bottom-0 -z-10 flex justify-center -ml-50 md:-mr-40">
-          <img src={myPic} alt="desc" className=" h-full max-w-none object-cover md:object-fill " />
+          <img
+            src={myPic2}
+            alt="desc"
+            className=" h-full max-w-none object-cover md:object-fill "
+          />
         </div>
         {/* Content Section */}
         <FadeIn direction="left" distance={100}>
