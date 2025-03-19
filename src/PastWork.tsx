@@ -28,7 +28,7 @@ function PastWork(props: PastWorkProps) {
     },
     {
       id: 1,
-      name: 'Board Game in Haskell',
+      name: 'Board Game in         Haskell',
       description:
         'Creating a board game called Catapult in Haskell highlights your ability to design functional programs with clean, maintainable code. It typically involves modeling the game state, handling player moves, and defining win conditions using Haskell’s powerful type system and pure functions.',
       image: board,
@@ -46,38 +46,40 @@ function PastWork(props: PastWorkProps) {
       animation: 'left',
       distance: 150,
     },
-    {
-      id: 3,
-      name: 'Medic in a school sporting event',
-      description:
-        'Serving as a medic during a school event involves providing first aid, ensuring participant safety, and responding to medical emergencies. This role requires attentiveness, quick thinking, and effective communication.',
-      image: med,
-      lang: [],
-      animation: 'right',
-      distance: 150,
-    },
   ];
   return (
     <>
-      <div className="relative grid grid-cols-1 md:grid-cols-2 min-h-screen items-start gap-y-12 gap-x-4 px-6 sm:px-8 justify-items-center pb-10 mx-5 ">
+      <div className="relative grid grid-cols-1 lg:grid-cols-3 min-h-screen items-start gap-y-12 gap-x-4 px-6 sm:px-8 justify-items-center pb-10 mx-5">
         {features.map((feature) => (
-          <FadeIn direction={feature.animation} distance={feature.distance}>
+          <FadeIn direction={feature.animation} distance={feature.distance} key={feature.id}>
             <div
               ref={feature.id == 0 ? null : props.sections[feature.id + 2]}
-              key={feature.id}
-              className="text-center max-w-xl pt-10 border-2 border-gray-400 rounded-xl bg-gray-800/30 justify-self-center"
+              className="text-center max-w-xl pt-10 border-2 border-gray-400 rounded-xl bg-gray-800/30 justify-self-center h-full flex flex-col min-h-[550px]"
             >
-              <div className="relative mb-8 px-5">
-                <h2 className="relative text-4xl text-gray-100 pb-10 font-bold">{feature.name}</h2>
-                <img src={feature.image} className="mx-auto w-80 drop-shadow-lg rounded-2xl" />
+              {/* Title and First Line */}
+              <div className="mb-8 px-5">
+                <h2 className="text-4xl text-gray-100 font-bold whitespace-pre-wrap">
+                  {feature.name}
+                </h2>
+                <hr className="w-4/5 mx-auto border-white my-6" />
               </div>
-              <hr className="w-4/5 mx-auto border-white mb-6" />
-              <p className="text-lg mb-6  text-white p-5">{feature.description}</p>
 
-              {feature.lang.length != 0 && <hr className="w-4/5 mx-auto border-white " />}
-              <div className="flex flex-wrap justify-center">
-                {feature.lang?.map((lang) => <img src={lang} className="h-12 m-5"></img>)}
+              {/* Description (Expands to Fill Space) */}
+              <div className="flex-grow px-5">
+                <p className="text-lg text-white">{feature.description}</p>
               </div>
+
+              {/* Second Line & Icons */}
+              {feature.lang.length > 0 && (
+                <div>
+                  <hr className="w-4/5 mx-auto border-white my-6" />
+                  <div className="flex flex-wrap justify-center pb-5">
+                    {feature.lang.map((lang, index) => (
+                      <img key={index} src={lang} className="h-12 m-5" alt="Technology" />
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </FadeIn>
         ))}

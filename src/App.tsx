@@ -79,7 +79,6 @@ function App() {
           id="past"
           className="bg-[#4A4A4A] bg-center bg-cover rounded-4xl"
           style={{
-            minHeight: '90vh',
             borderRadius: '2%',
             paddingTop: '2rem',
           }}
@@ -87,7 +86,7 @@ function App() {
           {' '}
           <h1
             ref={sections[2]}
-            className="text-lg p-1 border-1 border-white text-white rounded-full w-25 mx-auto mb-20"
+            className="text-xl border-2 border-white text-white rounded-full w-30 mx-auto mb-20"
           >
             Past Work
           </h1>
@@ -103,7 +102,7 @@ function App() {
           }}
         >
           <FadeIn>
-            <h2 className="text-lg border-2 rounded-full w-30 mx-auto mb-5">My Journey</h2>
+            <h2 className="text-xl border-2 rounded-full w-30 mx-auto mb-5">My Journey</h2>
             <Timeline2 />
           </FadeIn>
         </section>
