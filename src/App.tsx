@@ -102,7 +102,7 @@ function App() {
           }}
         >
           <FadeIn>
-            <h2 className="text-xl border-2 rounded-full w-30 mx-auto mb-5">My Journey</h2>
+            <h2 className="text-xl border-2 rounded-full w-35 mx-auto mb-5">My Journey</h2>
             <Timeline2 />
           </FadeIn>
         </section>
