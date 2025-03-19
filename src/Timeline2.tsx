@@ -71,7 +71,7 @@ const Timeline2: React.FC = () => {
 
               {/* Logo */}
               <FadeIn direction="left">
-                <div className="w-24 h-24 flex items-center justify-center rounded-full overflow-hidden bg-black transition-transform duration-300 hover:scale-150">
+                <div className="w-24 h-24 flex items-center justify-center rounded-full overflow-hidden bg-black ">
                   <img
                     src={exp.picture}
                     alt={exp.label}

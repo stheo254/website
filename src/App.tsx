@@ -71,7 +71,7 @@ function App() {
           id="about"
           className="mb-10"
           ref={sections[1]}
-          style={sectionStyle('white', 'auto', '-100px', 8)}
+          style={sectionStyle('white', 'auto', '0px', 8)}
         >
           <About />
         </section>

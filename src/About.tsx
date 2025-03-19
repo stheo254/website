@@ -30,11 +30,11 @@ function About() {
   return (
     <>
       {' '}
-      <h2 className="text-4xl font-bold text-gray-800 mb-4 mx-auto pt-30">About me</h2>
+      <h2 className="text-4xl font-bold text-gray-800 mx-auto pt-8">About me</h2>
       <div className="flex flex-col items-center justify-start pt-8 mx-auto ">
         {/* First Item (Centered Alone) */}
         <FadeIn direction="top">
-          <div key="intro" className="relative max-w-4xl mb-16 mt-10 mx-10">
+          <div key="intro" className="relative max-w-4xl mx-10">
             <p className="text-lg text-black">
               Hi, I'm Theo—a <span className="font-bold">curious and driven</span> Computer
               Engineering student eager to deepen my understanding of the technologies shaping our
@@ -49,12 +49,12 @@ function About() {
         </FadeIn>
 
         {/* Remaining Items (2x2 Grid) */}
-        <div className="py-12 px-6 mx-5">
+        <div className="py-8 px-6 mx-5">
           <FadeIn direction="left">
             <h2 className="text-4xl font-bold text-gray-800 mb-4 mx-auto">
               Technologies and Tools
             </h2>
-            <p className="text-lg text-gray-600 mb-10 max-w-4xl mx-auto">
+            <p className="text-lg text-black mb-10 max-w-4xl mx-auto">
               Using a combination of cutting-edge technologies and reliable open-source software, I
               build user-focused, performant apps and websites.
             </p>
