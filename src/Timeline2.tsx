@@ -89,7 +89,7 @@ const Timeline2: React.FC = () => {
             )}
             {/* Content */}
             <FadeIn direction="right">
-              <div className="ml-8 flex flex-col sm:flex-row sm:justify-between w-full ">
+              <div className="px-10 mx-8 flex flex-col sm:flex-row sm:justify-between w-full ">
                 <div className={`${index === timelineData.length - 1 ? 'flex items-center' : ' '}`}>
                   <h3 className="text-xl font-semibold text-black text-left">{exp.label}</h3>
                   <h2 className="text-xl font-semibold text-black text-left">{exp.color}</h2>

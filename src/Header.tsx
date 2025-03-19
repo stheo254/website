@@ -20,9 +20,9 @@ function Header(props: ScrollButtonsProps) {
   };
   return (
     // Header.jsx
-    <header className="flex flex-wrap justify-around items-center top-0 p-4 relative">
+    <header className="lg:flex lg:flex-wrap lg:justify-around grid grid-cols justify-items-center items-center top-0 p-4 relative">
       {/* Left Navigation */}
-      <div className="flex items-center space-x-4 sm:w-auto w-full justify-start sm:justify-start ">
+      <div className="flex items-center space-x-4 w-auto justify-start sm:justify-start ">
         <nav className="flex items-end space-x-4">
           <button
             className="font-bold text-black hover:underline"
@@ -48,12 +48,12 @@ function Header(props: ScrollButtonsProps) {
       </div>
 
       {/* Center Logo */}
-      <div className="flex justify-center sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:static w-full sm:w-auto mt-4 sm:mt-0">
+      <div className="flex justify-center lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:static w-auto mt-4 ">
         <img src={logo} alt="Logo" className="w-16 h-16 object-contain" />
       </div>
 
       {/* Right Section (CV and Email) */}
-      <div className="flex items-center gap-4 sm:w-auto w-full justify-end mt-4 sm:mt-0 mr-4">
+      <div className="flex items-center gap-4 w-auto justify-end mt-4 ">
         <a
           href="https://drive.google.com/uc?export=download&id=1EnwESEtgzeUQdHjNH0ErV3KHlRUm2GRW"
           target="_blank"
