@@ -27,7 +27,7 @@ function PastWork(props: PastWorkProps) {
     },
     {
       id: 1,
-      name: 'Board Game in         Haskell',
+      name: 'Board Game in Haskell',
       description:
         'Creating a board game called Catapult in Haskell highlights your ability to design functional programs with clean, maintainable code. It typically involves modeling the game state, handling player moves, and defining win conditions using Haskell’s powerful type system and pure functions.',
       image: board,
