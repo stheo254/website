@@ -18,7 +18,7 @@ function Titlecard(props: PastWorkProps) {
         <FadeIn direction="left" distance={100}>
           <div className="grid justify-items-start md:p-10 rounded-lg max-w-3xl z-10 -mt-45">
             <h1
-              className="text-5xl sm:text-7xl md:text-8xl text-black mb-4 font-bold font-montserrat text-left leading-tight text-left"
+              className="text-5xl sm:text-7xl md:text-8xl text-black mb-4 font-bold font-montserrat text-left leading-tight text-left p-4"
               style={{
                 textShadow:
                   '1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white',
