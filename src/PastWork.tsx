@@ -1,7 +1,6 @@
 import serverjpg from './assets/—Pngtree—web server vector icon_5462090(1).png';
 import board from './assets/swappy-20250315_001649.png';
 import db from './assets/information_5134979.png';
-import med from './assets/Doctor-Symbol-Caduceus-PNG-Picture.png';
 import FadeIn from './FadeIn';
 
 import clang from './assets/clang.png';
