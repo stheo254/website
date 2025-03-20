@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'], // For bold/titles
-        sans: ['Helvetica', 'Arial', 'sans-serif'], // For body/normal
+        roboto: ['Roboto', 'sans-serif'],
+        nunito: ['Nunito', 'sans-serif'],
       },
     },
   },

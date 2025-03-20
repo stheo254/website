@@ -30,8 +30,10 @@ function About() {
   return (
     <>
       {' '}
-      <h2 className="text-4xl font-bold text-gray-800 mx-auto pt-8">About me</h2>
-      <div className="flex flex-col items-center justify-start pt-8 mx-auto ">
+      <h2 className="text-4xl font-bold text-gray-800 mx-auto  roboto-bold mt-25 border-3 rounded-full w-60 mx-auto">
+        About me
+      </h2>
+      <div className="flex flex-col items-center justify-start py-8 mx-auto ">
         {/* First Item (Centered Alone) */}
         <FadeIn direction="top">
           <div key="intro" className="relative max-w-4xl mx-10">
@@ -51,7 +53,7 @@ function About() {
         {/* Remaining Items (2x2 Grid) */}
         <div className="py-8 px-6 mx-5">
           <FadeIn direction="left">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4 mx-auto">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4 mx-auto roboto-bold">
               Technologies and Tools
             </h2>
             <p className="text-lg text-black mb-10 max-w-4xl mx-auto">

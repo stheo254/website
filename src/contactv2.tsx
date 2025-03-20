@@ -1,30 +1,5 @@
-import { JSX } from 'react';
-import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import FadeIn from './FadeIn';
 
-type SocialLink = {
-  id: number;
-  name: string;
-  url: string;
-  icon: JSX.Element;
-};
-
-const socialLinks: SocialLink[] = [
-  { id: 1, name: 'Twitter', url: 'https://x.com/theo_stefanus', icon: <FaTwitter /> },
-  {
-    id: 2,
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/stefanus-theo-chandra-909375200/',
-    icon: <FaLinkedin />,
-  },
-  { id: 3, name: 'GitHub', url: 'https://github.com/stheo254', icon: <FaGithub /> },
-  {
-    id: 4,
-    name: 'Instagram',
-    url: 'https://www.instagram.com/stefanus_theo/',
-    icon: <FaInstagram />,
-  },
-];
 function Contact() {
   return (
     <>
@@ -45,28 +20,6 @@ function Contact() {
               >
                 Contact Me
               </a>
-            </div>
-          </div>
-        </FadeIn>
-
-        <FadeIn direction="top" distance={100}>
-          <div className="flex flex-col pt-5 justify-center items-center text-sm ">
-            <div>You can also find me here:</div>
-            <div className="flex gap-6">
-              {socialLinks.map((link: SocialLink) => (
-                <FadeIn rotate={45}>
-                  <a
-                    key={link.id}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-2xl hover:text-blue-500 transition-colors"
-                    aria-label={link.name}
-                  >
-                    {link.icon}
-                  </a>
-                </FadeIn>
-              ))}
             </div>
           </div>
         </FadeIn>

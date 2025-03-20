@@ -4,9 +4,9 @@ import db from './assets/information_5134979.png';
 import FadeIn from './FadeIn';
 
 import clang from './assets/clang.png';
-import python from './assets/Python-logo-notext.svg.png';
+import python from './assets/eqw.png';
 import haskell from './assets/haskell2.png';
-import duck from './assets/DuckDB_logo.svg.png';
+import duck from './assets/afsd.png';
 
 type PastWorkProps = {
   sections: React.RefObject<HTMLDivElement | null>[];
@@ -33,7 +33,7 @@ function PastWork(props: PastWorkProps) {
         'Creating a board game called Catapult in Haskell highlights your ability to design functional programs with clean, maintainable code. It typically involves modeling the game state, handling player moves, and defining win conditions using Haskell’s powerful type system and pure functions.',
       image: board,
       lang: [haskell],
-      animation: 'right',
+      animation: 'top',
       distance: 150,
     },
     {
@@ -43,7 +43,7 @@ function PastWork(props: PastWorkProps) {
         'Handling databases in Python involves connecting to a database, executing queries, and managing data efficiently. A database management project in Python shows my ability to store, retrieve, and manipulate data effectively—essential for back-end development and data engineering roles.',
       image: db,
       lang: [python, duck],
-      animation: 'left',
+      animation: 'right',
       distance: 150,
     },
   ];
@@ -75,7 +75,12 @@ function PastWork(props: PastWorkProps) {
                   <hr className="w-4/5 mx-auto border-white my-6" />
                   <div className="flex flex-wrap justify-center pb-5">
                     {feature.lang.map((lang, index) => (
-                      <img key={index} src={lang} className="h-12 m-5" alt="Technology" />
+                      <img
+                        key={index}
+                        src={lang}
+                        className="h-12 m-5 rounded-full"
+                        alt="Technology"
+                      />
                     ))}
                   </div>
                 </div>

@@ -1,5 +1,5 @@
 import { JSX } from 'react';
-import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import FadeIn from './FadeIn';
 
 type SocialLink = {
@@ -10,20 +10,7 @@ type SocialLink = {
 };
 
 const socialLinks: SocialLink[] = [
-  { id: 1, name: 'Twitter', url: 'https://x.com/theo_stefanus', icon: <FaTwitter /> },
-  {
-    id: 2,
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/stefanus-theo-chandra-909375200/',
-    icon: <FaLinkedin />,
-  },
   { id: 3, name: 'GitHub', url: 'https://github.com/stheo254', icon: <FaGithub /> },
-  {
-    id: 4,
-    name: 'Instagram',
-    url: 'https://www.instagram.com/stefanus_theo/',
-    icon: <FaInstagram />,
-  },
 ];
 function Contact() {
   return (
