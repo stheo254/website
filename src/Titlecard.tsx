@@ -22,7 +22,7 @@ function Titlecard(props: PastWorkProps) {
             </div>
             {/* Content Section */}
             <FadeIn direction="left" distance={100}>
-              <div className="grid justify-items-center md:justify-items-start p-8 rounded-lg max-w-3xl z-10 -mt-45">
+              <div className="grid justify-items-center md:justify-items-start p-8 rounded-lg max-w-3xl z-10 xl:-mt-15">
                 <h1 className=" text-center md:text-left roboto-bold text-5xl sm:text-7xl md:text-8xl text-black mb-4">
                   Stefanus Theo Chandra
                 </h1>

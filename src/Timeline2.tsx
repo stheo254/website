@@ -2,6 +2,7 @@ import stk from './assets/tu-kaiserslautern-100~_v-img__16__9__l_-1dc0e8f74459dd
 import tu from './assets/images.jpg';
 import binus from './assets/1.jpg';
 import more from './assets/iwqemages.png';
+import ppi from './assets/ppi.webp';
 import FadeIn from './FadeIn';
 type TimelineItem = {
   id: number;
@@ -17,7 +18,7 @@ const timelineData: TimelineItem[] = [
     id: 1,
     content:
       'Finished high school in Tangerang, Indonesia. Majored in the A Levels Cambridge curriculum and Science, it provided me with the proper foundation of logical & critical thinking.',
-    label: 'SCHOOL',
+    label: 'BINUS School Serpong',
     color: '2016-2019',
     picture: binus,
     animation: 'top',
@@ -25,7 +26,7 @@ const timelineData: TimelineItem[] = [
   {
     id: 2,
     content:
-      "Before taking my Bachelor's degree, I took the Studienkolleg program at Hochschule Kaiserslautern, at... you guessed it, Kaiserslautern!",
+      "Before taking my Bachelor's degree, I took the Studienkolleg program at Hochschule Kaiserslautern. There I was able to improve my german and critical thinking.",
     label: 'Studienkolleg Kaiserslautern',
     color: 'March - June 2020',
     picture: stk,
@@ -34,14 +35,23 @@ const timelineData: TimelineItem[] = [
   {
     id: 3,
     content:
-      "After Studienkolleg,I started my tuition to another University before I started my Bachelor's degree program at Technische Universität Berlin. I moved because i dont feel that i am a great fit in my previous university.",
-    label: 'TU BERLIN',
+      "After Studienkolleg I started my Bachelor's degree program at Technische Universität Berlin. I studied Computer Engineering. Here I learned most of the important skills regarding to what I want to achieve.",
+    label: 'Technische Universität Berlin',
     color: 'April 2022 - Now',
     picture: tu,
     animation: 'left',
   },
   {
     id: 4,
+    content:
+      'Became an active member to engage with the Indonesian student community and develop leadership and communication skills.',
+    label: 'PPI-Berlin Brandenburg (Indonesian Student Association)',
+    color: '2024 - Now',
+    picture: ppi,
+    animation: 'left',
+  },
+  {
+    id: 5,
     content: 'There is more to come                                            ',
     label: '',
     color: '',

@@ -42,8 +42,8 @@ function About() {
               Engineering student eager to deepen my understanding of the technologies shaping our
               world. I’m passionate about{' '}
               <span className="font-bold">improving my programming skills</span> and{' '}
-              <span className="font-bold">exploring how systems work at a fundamental level </span>
-              .I’m particularly interested in computer architecture and cybersecurity. I enjoy
+              <span className="font-bold">exploring how systems work at a fundamental level</span>.
+              I’m particularly interested in computer architecture and cybersecurity. I enjoy
               learning how hardware and software interact and tackling the challenges of protecting
               digital systems.
             </p>

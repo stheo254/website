@@ -60,7 +60,7 @@ function App() {
         <section
           className="bg-[#F8F8F8] bg-cover bg-center "
           ref={sections[0]}
-          style={sectionStyle('lightgray', '20vh', '-10px', 10)}
+          style={sectionStyle('lightgray', '20vh', '0px', 10)}
         >
           <FadeIn direction="top">
             <Header scrollTo={scrollToSection} />
@@ -69,7 +69,7 @@ function App() {
         </section>
         <section
           id="about"
-          className="mb-10"
+          className="mb-10 py-5"
           ref={sections[1]}
           style={sectionStyle('white', 'auto', '0px', 8)}
         >
@@ -80,14 +80,14 @@ function App() {
           className="bg-[#4A4A4A] bg-center bg-cover rounded-4xl"
           style={{
             borderRadius: '2%',
-            paddingTop: '2rem',
-            paddingBottom: '6rem',
+            paddingTop: '3rem',
+            paddingBottom: '7rem',
           }}
         >
           {' '}
           <h1
             ref={sections[2]}
-            className="text-4xl border-3 border-white text-white rounded-full w-60 mx-auto mb-20 roboto-bold mt-25"
+            className="text-4xl border-3 border-white text-white rounded-full w-60 mx-auto mb-20 roboto-bold mt-30"
           >
             Past Work
           </h1>
@@ -99,8 +99,8 @@ function App() {
           style={{
             backgroundColor: 'white',
             minHeight: '50vh',
-            paddingTop: '2rem',
-            paddingBottom: '6rem',
+            paddingTop: '3rem',
+            paddingBottom: '7rem',
           }}
         >
           <FadeIn>
